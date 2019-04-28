@@ -31,26 +31,98 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dtgvRoom = new System.Windows.Forms.DataGridView();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.btnBack = new DevExpress.XtraEditors.SimpleButton();
             this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
             this.btnEdit = new DevExpress.XtraEditors.SimpleButton();
             this.btnAdd = new DevExpress.XtraEditors.SimpleButton();
-            this.dtgvStaff = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvStaff)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvRoom)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel1.Controls.Add(this.simpleButton2);
+            this.panel1.Controls.Add(this.simpleButton1);
             this.panel1.Controls.Add(this.btnBack);
             this.panel1.Controls.Add(this.btnDelete);
             this.panel1.Controls.Add(this.btnEdit);
             this.panel1.Controls.Add(this.btnAdd);
-            this.panel1.Location = new System.Drawing.Point(0, 330);
+            this.panel1.Location = new System.Drawing.Point(0, 354);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 123);
+            this.panel1.Size = new System.Drawing.Size(1018, 140);
             this.panel1.TabIndex = 4;
+            // 
+            // dtgvRoom
+            // 
+            this.dtgvRoom.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvRoom.BackgroundColor = System.Drawing.SystemColors.ButtonShadow;
+            this.dtgvRoom.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvRoom.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dtgvRoom.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvRoom.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dtgvRoom.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dtgvRoom.Location = new System.Drawing.Point(0, -2);
+            this.dtgvRoom.Name = "dtgvRoom";
+            this.dtgvRoom.Size = new System.Drawing.Size(1018, 359);
+            this.dtgvRoom.TabIndex = 3;
+            // 
+            // simpleButton2
+            // 
+            this.simpleButton2.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.simpleButton2.Appearance.BackColor2 = System.Drawing.Color.White;
+            this.simpleButton2.Appearance.BorderColor = System.Drawing.Color.Transparent;
+            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton2.Appearance.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.simpleButton2.Appearance.Options.UseBackColor = true;
+            this.simpleButton2.Appearance.Options.UseBorderColor = true;
+            this.simpleButton2.Appearance.Options.UseFont = true;
+            this.simpleButton2.Appearance.Options.UseForeColor = true;
+            this.simpleButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
+            this.simpleButton2.ImageOptions.Image = global::QLSK.Properties.Resources.delete;
+            this.simpleButton2.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.simpleButton2.Location = new System.Drawing.Point(714, 23);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(130, 76);
+            this.simpleButton2.TabIndex = 5;
+            this.simpleButton2.Text = "Tra cứu";
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.simpleButton1.Appearance.BackColor2 = System.Drawing.Color.White;
+            this.simpleButton1.Appearance.BorderColor = System.Drawing.Color.Transparent;
+            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton1.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.simpleButton1.Appearance.Options.UseBackColor = true;
+            this.simpleButton1.Appearance.Options.UseBorderColor = true;
+            this.simpleButton1.Appearance.Options.UseFont = true;
+            this.simpleButton1.Appearance.Options.UseForeColor = true;
+            this.simpleButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
+            this.simpleButton1.ImageOptions.Image = global::QLSK.Properties.Resources.rent2;
+            this.simpleButton1.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.simpleButton1.Location = new System.Drawing.Point(533, 23);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(130, 76);
+            this.simpleButton1.TabIndex = 4;
+            this.simpleButton1.Text = "Thuê";
             // 
             // btnBack
             // 
@@ -66,11 +138,12 @@
             this.btnBack.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
             this.btnBack.ImageOptions.Image = global::QLSK.Properties.Resources.back;
             this.btnBack.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.btnBack.Location = new System.Drawing.Point(614, 23);
+            this.btnBack.Location = new System.Drawing.Point(874, 23);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(174, 76);
+            this.btnBack.Size = new System.Drawing.Size(132, 76);
             this.btnBack.TabIndex = 3;
             this.btnBack.Text = "Trở về";
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnDelete
             // 
@@ -86,11 +159,12 @@
             this.btnDelete.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
             this.btnDelete.ImageOptions.Image = global::QLSK.Properties.Resources.delete;
             this.btnDelete.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.btnDelete.Location = new System.Drawing.Point(422, 23);
+            this.btnDelete.Location = new System.Drawing.Point(353, 23);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(174, 76);
+            this.btnDelete.Size = new System.Drawing.Size(130, 76);
             this.btnDelete.TabIndex = 2;
             this.btnDelete.Text = "Xoá";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnEdit
             // 
@@ -106,9 +180,9 @@
             this.btnEdit.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
             this.btnEdit.ImageOptions.Image = global::QLSK.Properties.Resources.edit;
             this.btnEdit.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.btnEdit.Location = new System.Drawing.Point(224, 23);
+            this.btnEdit.Location = new System.Drawing.Point(189, 23);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(174, 76);
+            this.btnEdit.Size = new System.Drawing.Size(130, 76);
             this.btnEdit.TabIndex = 1;
             this.btnEdit.Text = "Sửa";
             // 
@@ -128,48 +202,21 @@
             this.btnAdd.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
             this.btnAdd.Location = new System.Drawing.Point(12, 23);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(174, 76);
+            this.btnAdd.Size = new System.Drawing.Size(130, 76);
             this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = "Thêm";
-            // 
-            // dtgvStaff
-            // 
-            this.dtgvStaff.BackgroundColor = System.Drawing.SystemColors.ButtonShadow;
-            this.dtgvStaff.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvStaff.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dtgvStaff.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvStaff.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dtgvStaff.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dtgvStaff.Location = new System.Drawing.Point(0, -2);
-            this.dtgvStaff.Name = "dtgvStaff";
-            this.dtgvStaff.Size = new System.Drawing.Size(800, 337);
-            this.dtgvStaff.TabIndex = 3;
             // 
             // fRoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1018, 491);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dtgvStaff);
+            this.Controls.Add(this.dtgvRoom);
             this.Name = "fRoom";
             this.Text = "Phòng";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvStaff)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvRoom)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -181,6 +228,8 @@
         private DevExpress.XtraEditors.SimpleButton btnDelete;
         private DevExpress.XtraEditors.SimpleButton btnEdit;
         private DevExpress.XtraEditors.SimpleButton btnAdd;
-        private System.Windows.Forms.DataGridView dtgvStaff;
+        private System.Windows.Forms.DataGridView dtgvRoom;
+        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
     }
 }

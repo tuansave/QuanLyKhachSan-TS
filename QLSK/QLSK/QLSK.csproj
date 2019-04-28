@@ -184,9 +184,12 @@
     <Content Include="Resources\icon.ico" />
     <None Include="Resources\logout - Copy.png" />
     <Content Include="Resources\pay.png" />
+    <None Include="Resources\rent.png" />
+    <None Include="Resources\rent2.png" />
     <Content Include="Resources\room.png" />
     <Content Include="Resources\room1.png" />
     <None Include="Resources\room11.png" />
+    <None Include="Resources\search.png" />
     <Content Include="Resources\services.png" />
     <Content Include="Resources\statis.png" />
   </ItemGroup>

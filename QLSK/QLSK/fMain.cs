@@ -94,7 +94,15 @@ namespace QLSK
                     flpRoom.Controls.Add(btn);
                 }
              }
-            }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            fRoom f = new fRoom();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
+        }
+    }
         }
     
 

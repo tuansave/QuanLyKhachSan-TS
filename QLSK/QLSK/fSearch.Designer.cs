@@ -135,6 +135,7 @@
             this.cbxRoomStatus.Name = "cbxRoomStatus";
             this.cbxRoomStatus.Size = new System.Drawing.Size(155, 28);
             this.cbxRoomStatus.TabIndex = 1;
+            this.cbxRoomStatus.SelectedValueChanged += new System.EventHandler(this.cbxRoomStatus_SelectedValueChanged);
             // 
             // panel6
             // 

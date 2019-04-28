@@ -81,7 +81,9 @@ namespace QLSK
                         break;
                 }
                 btn.Text = item.RoomName+Environment.NewLine+strRoomStatus;
-                switch(item.RoomStatus)
+                int newSize = 14;
+                btn.Font = new Font(btn.Font.FontFamily, newSize);
+                switch (item.RoomStatus)
                 {
                     case 1: btn.BackColor = Color.Aquamarine;
                         break;
@@ -100,7 +102,7 @@ namespace QLSK
             fRoom f = new fRoom();
             this.Hide();
             f.ShowDialog();
-            this.Show();
+            this.Close();
         }
     }
         }

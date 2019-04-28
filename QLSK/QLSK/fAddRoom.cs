@@ -42,16 +42,7 @@ namespace QLSK
         }
 
 
-        private void cbxStyleRoom_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cbxStyleRoom.SelectedItem != null)
-            {
-                DataRowView drv = cbxStyleRoom.SelectedItem as DataRowView;
-                _room.RoomStyle = int.Parse(cbxStyleRoom.SelectedValue.ToString());
-                string query = RoomDAO.Instance.cbxstyleRoom_SelectIndexQuery() + _room.RoomStyle;
-                txbPrice.Text = DataProvide.Instance.ExecuteReader(query); // hien thi don gia theo StyleRoom
-            }
-        }
+
         #endregion
 
         #region get
@@ -82,7 +73,16 @@ namespace QLSK
         }
         #endregion
 
-
+        private void cbxStyleRoom_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            if (cbxStyleRoom.SelectedItem != null)
+            {
+                DataRowView drv = cbxStyleRoom.SelectedItem as DataRowView;
+                _room.RoomStyle = int.Parse(cbxStyleRoom.SelectedValue.ToString());
+                string query = RoomDAO.Instance.cbxstyleRoom_SelectIndexQuery() + _room.RoomStyle;
+                txbPrice.Text = DataProvide.Instance.ExecuteReader(query); // hien thi don gia theo StyleRoom
+            }
+        }
         private void btnAdd_Click(object sender, EventArgs e)
         {
             try
@@ -91,10 +91,10 @@ namespace QLSK
                 if (data < 0)
                 {
                     MessageBox.Show("Thêm phòng thành công");
-                     _fRoom.LoadRoomList();
-                  //Button button =new addbutton();
+                    _fRoom.LoadRoomList();
+                                    //Button button =new addbutton();
                     //m.AddRoom(button);
-                    // m.ReLoadStatusOfRooms();
+                     //m.ReLoadStatusOfRooms();
                 }
             }
             catch (Exception ex)
@@ -103,8 +103,13 @@ namespace QLSK
                 {
                     MessageBox.Show("Mã phòng không hợp lệ");
                 }
-              
+
             }
+        }
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            
         }
     }
 }

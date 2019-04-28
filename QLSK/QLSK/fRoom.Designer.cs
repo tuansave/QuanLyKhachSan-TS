@@ -158,6 +158,7 @@
             this.btnEdit.Size = new System.Drawing.Size(130, 76);
             this.btnEdit.TabIndex = 1;
             this.btnEdit.Text = "Sửa";
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnAdd
             // 

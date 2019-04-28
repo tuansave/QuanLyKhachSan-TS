@@ -32,7 +32,6 @@ namespace QLSK
             this.Close();
         }
 
-        #region set
         private void setDataStyleRoom() //value combo box theo ma loai phong
         {
             cbxStyleRoom.DisplayMember = "TenLoaiPhong";
@@ -46,28 +45,12 @@ namespace QLSK
             cbxRoomStatus.ValueMember = "MaTinhTrang";
             cbxRoomStatus.DataSource = DataProvide.Instance.ExecuteQuery(RoomDAO.Instance.setDataRoomStatusQuery());
         }
-        #endregion
-
-        #region get
+        
         private RoomDTO getCodeRoom()
         {
             _room.RoomCode = int.Parse(txbRoom.Text.ToString());
             return _room;
         }
-  
-        private void cbxRoomStatus_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cbxRoomStatus.SelectedItem != null)
-            {
-                DataRowView drv = cbxRoomStatus.SelectedItem as DataRowView;
-                _room.RoomStatus = int.Parse(cbxRoomStatus.SelectedValue.ToString());
-            }
-        }
-        #endregion
-
-   
-
-
         private void codeRoomSearch_Click_1(object sender, EventArgs e)
         {
             try
@@ -94,10 +77,6 @@ namespace QLSK
             dtgvDataRoom.DataSource = DataProvide.Instance.ExecuteQuery(query);
         }
 
-        private void btnBack_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
 
         private void cbxStyleRoom_SelectedIndexChanged_1(object sender, EventArgs e)
         {
@@ -108,6 +87,20 @@ namespace QLSK
 
                 DataRowView drv = cbxStyleRoom.SelectedItem as DataRowView;
                 _room.RoomName = cbxStyleRoom.Text;
+            }
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void cbxRoomStatus_SelectedValueChanged(object sender, EventArgs e)
+        {
+            if (cbxRoomStatus.SelectedItem != null)
+            {
+                DataRowView drv = cbxRoomStatus.SelectedItem as DataRowView;
+                _room.RoomStatus = int.Parse(cbxRoomStatus.SelectedValue.ToString());
             }
         }
     }

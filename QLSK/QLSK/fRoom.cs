@@ -24,12 +24,17 @@ namespace QLSK
         }
         private void btnDelete_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            fDeleteRoom f = new fDeleteRoom(this);
+            f.ShowDialog();
+            this.Show();
         }
 
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Close();
+            fMain f = new fMain();
+            f.Show();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -45,6 +50,14 @@ namespace QLSK
             fSearch _searchRoom = new fSearch();
             this.Hide();
             _searchRoom.ShowDialog();
+            this.Show();
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            fEditRoom f = new fEditRoom();
+            this.Hide();
+            f.ShowDialog();
             this.Show();
         }
     }

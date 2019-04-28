@@ -48,6 +48,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnAdd = new DevExpress.XtraEditors.SimpleButton();
+            this.btnBack = new DevExpress.XtraEditors.SimpleButton();
             this.panel8.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -168,6 +169,7 @@
             this.cbxStyleRoom.Name = "cbxStyleRoom";
             this.cbxStyleRoom.Size = new System.Drawing.Size(155, 28);
             this.cbxStyleRoom.TabIndex = 3;
+            this.cbxStyleRoom.SelectedIndexChanged += new System.EventHandler(this.cbxStyleRoom_SelectedIndexChanged_1);
             // 
             // panel5
             // 
@@ -255,11 +257,33 @@
             this.btnAdd.Text = "Thêm";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // btnBack
+            // 
+            this.btnBack.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.btnBack.Appearance.BackColor2 = System.Drawing.Color.White;
+            this.btnBack.Appearance.BorderColor = System.Drawing.Color.Transparent;
+            this.btnBack.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.btnBack.Appearance.Options.UseBackColor = true;
+            this.btnBack.Appearance.Options.UseBorderColor = true;
+            this.btnBack.Appearance.Options.UseFont = true;
+            this.btnBack.Appearance.Options.UseForeColor = true;
+            this.btnBack.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
+            this.btnBack.ImageOptions.Image = global::QLSK.Properties.Resources.back;
+            this.btnBack.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.btnBack.Location = new System.Drawing.Point(634, 284);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(132, 76);
+            this.btnBack.TabIndex = 12;
+            this.btnBack.Text = "Trở về";
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // fAddRoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 369);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -304,5 +328,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private DevExpress.XtraEditors.SimpleButton btnAdd;
+        private DevExpress.XtraEditors.SimpleButton btnBack;
     }
 }

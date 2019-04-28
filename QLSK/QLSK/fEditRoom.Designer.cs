@@ -36,14 +36,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txbRoomCodeOld = new System.Windows.Forms.TextBox();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
             this.txbRoomNameNew = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
             this.txbRoomNoteNew = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
             this.cbxRoomStyleNew = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.btnBack = new DevExpress.XtraEditors.SimpleButton();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -133,6 +133,15 @@
             this.panel8.Size = new System.Drawing.Size(345, 41);
             this.panel8.TabIndex = 2;
             // 
+            // txbRoomNameNew
+            // 
+            this.txbRoomNameNew.BackColor = System.Drawing.SystemColors.Window;
+            this.txbRoomNameNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbRoomNameNew.Location = new System.Drawing.Point(144, 9);
+            this.txbRoomNameNew.Name = "txbRoomNameNew";
+            this.txbRoomNameNew.Size = new System.Drawing.Size(172, 26);
+            this.txbRoomNameNew.TabIndex = 1;
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -143,15 +152,6 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "Tên phòng mới : ";
             // 
-            // txbRoomNameNew
-            // 
-            this.txbRoomNameNew.BackColor = System.Drawing.SystemColors.Window;
-            this.txbRoomNameNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbRoomNameNew.Location = new System.Drawing.Point(144, 9);
-            this.txbRoomNameNew.Name = "txbRoomNameNew";
-            this.txbRoomNameNew.Size = new System.Drawing.Size(172, 26);
-            this.txbRoomNameNew.TabIndex = 1;
-            // 
             // panel9
             // 
             this.panel9.Controls.Add(this.txbRoomNoteNew);
@@ -160,6 +160,15 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(422, 41);
             this.panel9.TabIndex = 3;
+            // 
+            // txbRoomNoteNew
+            // 
+            this.txbRoomNoteNew.BackColor = System.Drawing.SystemColors.Window;
+            this.txbRoomNoteNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbRoomNoteNew.Location = new System.Drawing.Point(178, 9);
+            this.txbRoomNoteNew.Name = "txbRoomNoteNew";
+            this.txbRoomNoteNew.Size = new System.Drawing.Size(137, 26);
+            this.txbRoomNoteNew.TabIndex = 1;
             // 
             // label8
             // 
@@ -171,15 +180,6 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "Ghi chú mới : ";
             // 
-            // txbRoomNoteNew
-            // 
-            this.txbRoomNoteNew.BackColor = System.Drawing.SystemColors.Window;
-            this.txbRoomNoteNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbRoomNoteNew.Location = new System.Drawing.Point(178, 9);
-            this.txbRoomNoteNew.Name = "txbRoomNoteNew";
-            this.txbRoomNoteNew.Size = new System.Drawing.Size(137, 26);
-            this.txbRoomNoteNew.TabIndex = 1;
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.cbxRoomStyleNew);
@@ -188,16 +188,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(365, 42);
             this.panel2.TabIndex = 4;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label6.Location = new System.Drawing.Point(12, 9);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(125, 20);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Loại phòng mới :";
             // 
             // cbxRoomStyleNew
             // 
@@ -208,6 +198,16 @@
             this.cbxRoomStyleNew.Size = new System.Drawing.Size(172, 28);
             this.cbxRoomStyleNew.TabIndex = 1;
             this.cbxRoomStyleNew.SelectedIndexChanged += new System.EventHandler(this.cbxRoomStyleNew_SelectedIndexChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label6.Location = new System.Drawing.Point(12, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(125, 20);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Loại phòng mới :";
             // 
             // simpleButton1
             // 
@@ -226,7 +226,7 @@
             this.simpleButton1.Location = new System.Drawing.Point(181, 264);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(169, 76);
-            this.simpleButton1.TabIndex = 5;
+            this.simpleButton1.TabIndex = 6;
             this.simpleButton1.Text = "Cập Nhật";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
@@ -247,7 +247,7 @@
             this.btnBack.Location = new System.Drawing.Point(627, 264);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(169, 76);
-            this.btnBack.TabIndex = 10;
+            this.btnBack.TabIndex = 7;
             this.btnBack.Text = "Trở về";
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
@@ -258,7 +258,7 @@
             this.panel6.Location = new System.Drawing.Point(405, 196);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(391, 42);
-            this.panel6.TabIndex = 11;
+            this.panel6.TabIndex = 5;
             // 
             // cbxRoomStatusNew
             // 

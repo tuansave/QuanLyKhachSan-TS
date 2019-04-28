@@ -104,7 +104,9 @@ namespace QLSK
 
         private void btnBack_Click(object sender, EventArgs e)
         {
+            fRoom f = new fRoom();
             this.Close();
+            f.Show();
         }
 
         private void cbxRoomStyleNew_SelectedIndexChanged(object sender, EventArgs e)

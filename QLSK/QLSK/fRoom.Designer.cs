@@ -31,13 +31,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dtgvRoom = new System.Windows.Forms.DataGridView();
             this.btnSearch = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.btnBack = new DevExpress.XtraEditors.SimpleButton();
             this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
             this.btnEdit = new DevExpress.XtraEditors.SimpleButton();
             this.btnAdd = new DevExpress.XtraEditors.SimpleButton();
-            this.dtgvRoom = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvRoom)).BeginInit();
             this.SuspendLayout();
@@ -55,6 +55,34 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1018, 140);
             this.panel1.TabIndex = 4;
+            // 
+            // dtgvRoom
+            // 
+            this.dtgvRoom.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvRoom.BackgroundColor = System.Drawing.SystemColors.ButtonShadow;
+            this.dtgvRoom.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvRoom.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtgvRoom.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvRoom.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dtgvRoom.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dtgvRoom.Location = new System.Drawing.Point(0, -2);
+            this.dtgvRoom.Name = "dtgvRoom";
+            this.dtgvRoom.Size = new System.Drawing.Size(1018, 359);
+            this.dtgvRoom.TabIndex = 3;
             // 
             // btnSearch
             // 
@@ -96,6 +124,7 @@
             this.simpleButton1.Size = new System.Drawing.Size(130, 76);
             this.simpleButton1.TabIndex = 4;
             this.simpleButton1.Text = "Thuê";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // btnBack
             // 
@@ -180,34 +209,6 @@
             this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = "Thêm";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // dtgvRoom
-            // 
-            this.dtgvRoom.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgvRoom.BackgroundColor = System.Drawing.SystemColors.ButtonShadow;
-            this.dtgvRoom.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvRoom.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgvRoom.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvRoom.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dtgvRoom.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dtgvRoom.Location = new System.Drawing.Point(0, -2);
-            this.dtgvRoom.Name = "dtgvRoom";
-            this.dtgvRoom.Size = new System.Drawing.Size(1018, 359);
-            this.dtgvRoom.TabIndex = 3;
             // 
             // fRoom
             // 

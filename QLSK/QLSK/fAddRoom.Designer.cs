@@ -66,7 +66,7 @@
             this.txbRoomCode.Location = new System.Drawing.Point(107, 7);
             this.txbRoomCode.Name = "txbRoomCode";
             this.txbRoomCode.Size = new System.Drawing.Size(155, 26);
-            this.txbRoomCode.TabIndex = 1;
+            this.txbRoomCode.TabIndex = 0;
             // 
             // label2
             // 
@@ -92,10 +92,10 @@
             // 
             this.panel8.Controls.Add(this.txbNote);
             this.panel8.Controls.Add(this.label6);
-            this.panel8.Location = new System.Drawing.Point(432, 11);
+            this.panel8.Location = new System.Drawing.Point(12, 69);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(265, 38);
-            this.panel8.TabIndex = 3;
+            this.panel8.TabIndex = 2;
             // 
             // txbNote
             // 
@@ -103,7 +103,7 @@
             this.txbNote.Location = new System.Drawing.Point(107, 6);
             this.txbNote.Name = "txbNote";
             this.txbNote.Size = new System.Drawing.Size(155, 26);
-            this.txbNote.TabIndex = 4;
+            this.txbNote.TabIndex = 2;
             // 
             // label6
             // 
@@ -121,7 +121,7 @@
             this.txbRoomName.Location = new System.Drawing.Point(107, 9);
             this.txbRoomName.Name = "txbRoomName";
             this.txbRoomName.Size = new System.Drawing.Size(155, 26);
-            this.txbRoomName.TabIndex = 2;
+            this.txbRoomName.TabIndex = 1;
             // 
             // label3
             // 
@@ -137,10 +137,10 @@
             // 
             this.panel6.Controls.Add(this.txbPrice);
             this.panel6.Controls.Add(this.label4);
-            this.panel6.Location = new System.Drawing.Point(432, 64);
+            this.panel6.Location = new System.Drawing.Point(11, 125);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(265, 43);
-            this.panel6.TabIndex = 5;
+            this.panel6.TabIndex = 4;
             // 
             // txbPrice
             // 
@@ -149,7 +149,7 @@
             this.txbPrice.Name = "txbPrice";
             this.txbPrice.ReadOnly = true;
             this.txbPrice.Size = new System.Drawing.Size(155, 26);
-            this.txbPrice.TabIndex = 1;
+            this.txbPrice.TabIndex = 4;
             // 
             // label4
             // 
@@ -175,16 +175,16 @@
             // 
             this.panel5.Controls.Add(this.cbxStyleRoom);
             this.panel5.Controls.Add(this.label3);
-            this.panel5.Location = new System.Drawing.Point(12, 123);
+            this.panel5.Location = new System.Drawing.Point(426, 69);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(265, 44);
-            this.panel5.TabIndex = 2;
+            this.panel5.TabIndex = 3;
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.txbRoomName);
             this.panel3.Controls.Add(this.label5);
-            this.panel3.Location = new System.Drawing.Point(12, 64);
+            this.panel3.Location = new System.Drawing.Point(429, 12);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(265, 43);
             this.panel3.TabIndex = 1;
@@ -253,7 +253,7 @@
             this.btnAdd.Location = new System.Drawing.Point(335, 284);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(130, 76);
-            this.btnAdd.TabIndex = 6;
+            this.btnAdd.TabIndex = 5;
             this.btnAdd.Text = "Thêm";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -274,7 +274,7 @@
             this.btnBack.Location = new System.Drawing.Point(634, 284);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(132, 76);
-            this.btnBack.TabIndex = 12;
+            this.btnBack.TabIndex = 6;
             this.btnBack.Text = "Trở về";
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 

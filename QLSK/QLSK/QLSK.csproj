@@ -142,6 +142,12 @@
     <Compile Include="fMain.Designer.cs">
       <DependentUpon>fMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="fRent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fRent.Designer.cs">
+      <DependentUpon>fRent.cs</DependentUpon>
+    </Compile>
     <Compile Include="fRoom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +159,12 @@
     </Compile>
     <Compile Include="fSearch.Designer.cs">
       <DependentUpon>fSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fViewRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fViewRoom.Designer.cs">
+      <DependentUpon>fViewRoom.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -171,11 +183,17 @@
     <EmbeddedResource Include="fMain.resx">
       <DependentUpon>fMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fRent.resx">
+      <DependentUpon>fRent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fRoom.resx">
       <DependentUpon>fRoom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fSearch.resx">
       <DependentUpon>fSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fViewRoom.resx">
+      <DependentUpon>fViewRoom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -223,6 +241,7 @@
     <Content Include="Resources\pay.png" />
     <None Include="Resources\rent.png" />
     <None Include="Resources\rent2.png" />
+    <None Include="Resources\rent3.png" />
     <Content Include="Resources\room.png" />
     <Content Include="Resources\room1.png" />
     <None Include="Resources\room11.png" />

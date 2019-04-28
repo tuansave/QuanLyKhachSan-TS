@@ -58,6 +58,14 @@ namespace QLSK
             fEditRoom f = new fEditRoom();
             this.Hide();
             f.ShowDialog();
+
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            fRent f = new fRent(this);
+            this.Hide();
+            f.ShowDialog();
             this.Show();
         }
     }

@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dtgvRoom = new System.Windows.Forms.DataGridView();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnSearch = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.btnBack = new DevExpress.XtraEditors.SimpleButton();
             this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
             this.btnEdit = new DevExpress.XtraEditors.SimpleButton();
             this.btnAdd = new DevExpress.XtraEditors.SimpleButton();
+            this.dtgvRoom = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvRoom)).BeginInit();
             this.SuspendLayout();
@@ -45,7 +45,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel1.Controls.Add(this.simpleButton2);
+            this.panel1.Controls.Add(this.btnSearch);
             this.panel1.Controls.Add(this.simpleButton1);
             this.panel1.Controls.Add(this.btnBack);
             this.panel1.Controls.Add(this.btnDelete);
@@ -56,53 +56,26 @@
             this.panel1.Size = new System.Drawing.Size(1018, 140);
             this.panel1.TabIndex = 4;
             // 
-            // dtgvRoom
+            // btnSearch
             // 
-            this.dtgvRoom.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgvRoom.BackgroundColor = System.Drawing.SystemColors.ButtonShadow;
-            this.dtgvRoom.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvRoom.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dtgvRoom.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvRoom.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dtgvRoom.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dtgvRoom.Location = new System.Drawing.Point(0, -2);
-            this.dtgvRoom.Name = "dtgvRoom";
-            this.dtgvRoom.Size = new System.Drawing.Size(1018, 359);
-            this.dtgvRoom.TabIndex = 3;
-            // 
-            // simpleButton2
-            // 
-            this.simpleButton2.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.simpleButton2.Appearance.BackColor2 = System.Drawing.Color.White;
-            this.simpleButton2.Appearance.BorderColor = System.Drawing.Color.Transparent;
-            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton2.Appearance.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.simpleButton2.Appearance.Options.UseBackColor = true;
-            this.simpleButton2.Appearance.Options.UseBorderColor = true;
-            this.simpleButton2.Appearance.Options.UseFont = true;
-            this.simpleButton2.Appearance.Options.UseForeColor = true;
-            this.simpleButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
-            this.simpleButton2.ImageOptions.Image = global::QLSK.Properties.Resources.delete;
-            this.simpleButton2.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.simpleButton2.Location = new System.Drawing.Point(714, 23);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(130, 76);
-            this.simpleButton2.TabIndex = 5;
-            this.simpleButton2.Text = "Tra cứu";
+            this.btnSearch.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.btnSearch.Appearance.BackColor2 = System.Drawing.Color.White;
+            this.btnSearch.Appearance.BorderColor = System.Drawing.Color.Transparent;
+            this.btnSearch.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.Appearance.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.btnSearch.Appearance.Options.UseBackColor = true;
+            this.btnSearch.Appearance.Options.UseBorderColor = true;
+            this.btnSearch.Appearance.Options.UseFont = true;
+            this.btnSearch.Appearance.Options.UseForeColor = true;
+            this.btnSearch.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
+            this.btnSearch.ImageOptions.Image = global::QLSK.Properties.Resources.search;
+            this.btnSearch.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.btnSearch.Location = new System.Drawing.Point(714, 23);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(130, 76);
+            this.btnSearch.TabIndex = 5;
+            this.btnSearch.Text = "Tra cứu";
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // simpleButton1
             // 
@@ -205,6 +178,35 @@
             this.btnAdd.Size = new System.Drawing.Size(130, 76);
             this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = "Thêm";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // dtgvRoom
+            // 
+            this.dtgvRoom.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvRoom.BackgroundColor = System.Drawing.SystemColors.ButtonShadow;
+            this.dtgvRoom.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvRoom.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtgvRoom.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvRoom.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dtgvRoom.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dtgvRoom.Location = new System.Drawing.Point(0, -2);
+            this.dtgvRoom.Name = "dtgvRoom";
+            this.dtgvRoom.Size = new System.Drawing.Size(1018, 359);
+            this.dtgvRoom.TabIndex = 3;
             // 
             // fRoom
             // 
@@ -229,7 +231,7 @@
         private DevExpress.XtraEditors.SimpleButton btnEdit;
         private DevExpress.XtraEditors.SimpleButton btnAdd;
         private System.Windows.Forms.DataGridView dtgvRoom;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraEditors.SimpleButton btnSearch;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
     }
 }

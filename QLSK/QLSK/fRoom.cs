@@ -18,7 +18,7 @@ namespace QLSK
             InitializeComponent();
             LoadRoomList();
         }
-        void LoadRoomList()
+       public void LoadRoomList()
         {
             dtgvRoom.DataSource = DataProvide.Instance.ExecuteQuery(RoomDAO.Instance.ExecuteLoadInforRoomQuery());
         }
@@ -30,6 +30,22 @@ namespace QLSK
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            fAddRoom _addRoom = new fAddRoom(this/*, m*/);
+            this.Hide();
+            _addRoom.ShowDialog();
+            this.Show();
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            fSearch _searchRoom = new fSearch();
+            this.Hide();
+            _searchRoom.ShowDialog();
+            this.Show();
         }
     }
 }

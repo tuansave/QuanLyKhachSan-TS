@@ -112,6 +112,12 @@
     <Compile Include="DTO\RoomDTO.cs" />
     <Compile Include="DTO\RoomStyleDTO.cs" />
     <Compile Include="DTO\UserDTO.cs" />
+    <Compile Include="fAddRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddRoom.Designer.cs">
+      <DependentUpon>fAddRoom.cs</DependentUpon>
+    </Compile>
     <Compile Include="fLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,8 +136,17 @@
     <Compile Include="fRoom.Designer.cs">
       <DependentUpon>fRoom.cs</DependentUpon>
     </Compile>
+    <Compile Include="fSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fSearch.Designer.cs">
+      <DependentUpon>fSearch.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fAddRoom.resx">
+      <DependentUpon>fAddRoom.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -140,6 +155,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fRoom.resx">
       <DependentUpon>fRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fSearch.resx">
+      <DependentUpon>fSearch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

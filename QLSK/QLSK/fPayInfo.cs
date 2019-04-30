@@ -123,5 +123,26 @@ namespace QLSK
         {
 
         }
+        //button xoá phiếu thuê
+        //private void btnDelete_Click(object sender, EventArgs e)
+        //{
+        //    DataTable data = PayDAO.Instance.RentPay(cbListRentID.SelectedValue.ToString());
+        //    DataRow row = data.Rows[0];
+        //    DialogResult rs = MessageBox.Show("Bạn có chắc muốn xoá phiếu thuê?", "Thông Báo!!!", MessageBoxButtons.YesNo);
+        //    TablePay.AcceptChanges();
+        //    if (rs == DialogResult.Yes)
+        //    { 
+        //        foreach(DataRow r in TablePay.Rows)
+        //        {
+        //            r.Delete();
+        //        }
+        //        TablePay.AcceptChanges();
+        //        TablePay.Rows.Remove(row);
+        //    }
+         
+        //    else
+        //        MessageBox.Show("Huỷ xoá phiếu thuê");
+            
+        //}         tính năng xoá phiếu thuê, khi nào rảnh thì làm :P
     }
 }

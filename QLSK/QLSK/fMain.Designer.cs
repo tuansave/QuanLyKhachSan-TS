@@ -67,10 +67,10 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.simpleButton3);
             this.panel2.Controls.Add(this.simpleButton7);
             this.panel2.Controls.Add(this.simpleButton5);
             this.panel2.Controls.Add(this.simpleButton4);
-            this.panel2.Controls.Add(this.simpleButton3);
             this.panel2.Controls.Add(this.simpleButton2);
             this.panel2.Controls.Add(this.simpleButton1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -157,10 +157,10 @@
             this.simpleButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.simpleButton3.ImageOptions.Image = global::QLSK.Properties.Resources.services;
             this.simpleButton3.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.simpleButton3.Location = new System.Drawing.Point(329, 0);
+            this.simpleButton3.Location = new System.Drawing.Point(166, 0);
             this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(168, 81);
-            this.simpleButton3.TabIndex = 2;
+            this.simpleButton3.Size = new System.Drawing.Size(173, 81);
+            this.simpleButton3.TabIndex = 1;
             this.simpleButton3.Text = "Dịch Vụ";
             this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click_1);
             // 
@@ -178,10 +178,10 @@
             this.simpleButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.simpleButton2.ImageOptions.Image = global::QLSK.Properties.Resources.pay;
             this.simpleButton2.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.simpleButton2.Location = new System.Drawing.Point(164, 0);
+            this.simpleButton2.Location = new System.Drawing.Point(337, 0);
             this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(168, 81);
-            this.simpleButton2.TabIndex = 1;
+            this.simpleButton2.Size = new System.Drawing.Size(162, 81);
+            this.simpleButton2.TabIndex = 2;
             this.simpleButton2.Text = "Thanh Toán";
             this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 

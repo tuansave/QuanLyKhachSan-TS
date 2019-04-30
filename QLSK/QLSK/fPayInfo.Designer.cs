@@ -209,9 +209,9 @@
             this.simpleButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
             this.simpleButton2.ImageOptions.Image = global::QLSK.Properties.Resources.check___Copy;
             this.simpleButton2.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.simpleButton2.Location = new System.Drawing.Point(169, 262);
+            this.simpleButton2.Location = new System.Drawing.Point(198, 265);
             this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(246, 87);
+            this.simpleButton2.Size = new System.Drawing.Size(194, 87);
             this.simpleButton2.TabIndex = 11;
             this.simpleButton2.Text = "Thêm Phiếu Thuê";
             this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
@@ -257,7 +257,7 @@
             this.simpleButton1.Appearance.BackColor2 = System.Drawing.Color.White;
             this.simpleButton1.Appearance.BorderColor = System.Drawing.Color.Transparent;
             this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton1.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.simpleButton1.Appearance.ForeColor = System.Drawing.Color.ForestGreen;
             this.simpleButton1.Appearance.Options.UseBackColor = true;
             this.simpleButton1.Appearance.Options.UseBorderColor = true;
             this.simpleButton1.Appearance.Options.UseFont = true;
@@ -265,7 +265,7 @@
             this.simpleButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
             this.simpleButton1.ImageOptions.Image = global::QLSK.Properties.Resources.check_file;
             this.simpleButton1.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.simpleButton1.Location = new System.Drawing.Point(571, 333);
+            this.simpleButton1.Location = new System.Drawing.Point(661, 333);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(132, 87);
             this.simpleButton1.TabIndex = 11;

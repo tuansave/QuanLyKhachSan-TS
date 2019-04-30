@@ -172,6 +172,12 @@
     <Compile Include="fSearch.Designer.cs">
       <DependentUpon>fSearch.cs</DependentUpon>
     </Compile>
+    <Compile Include="fService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fService.Designer.cs">
+      <DependentUpon>fService.cs</DependentUpon>
+    </Compile>
     <Compile Include="fViewRoom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -209,6 +215,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fSearch.resx">
       <DependentUpon>fSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fService.resx">
+      <DependentUpon>fService.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fViewRoom.resx">
       <DependentUpon>fViewRoom.cs</DependentUpon>

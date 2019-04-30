@@ -52,7 +52,7 @@ namespace QuanLyKhachSan.DAO
             string query = "EXEC dbo.sp_ThemHoaDon @TenKH , @Ngay ";
             DataProvide.Instance.ExecuteQuery(query, new object[] { name, date });
         }
-
+ 
         public void AddPayDetailByRentID(List<string> strList)
         {
             string query = "EXEC dbo.sp_ThemChiTietHoaDonTheoMaPT @MaPT ";

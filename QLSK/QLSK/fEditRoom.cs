@@ -141,8 +141,8 @@ namespace QLSK
                     if (data < 0)
                     {
                         MessageBox.Show("Sửa phòng thành công");
-                        fEditRoom f = new fEditRoom();
-                        this.Hide();
+                        fRoom f = new fRoom();
+                        this.Close();
                         f.Show();
                     }
                 }

@@ -256,6 +256,7 @@
     <Content Include="Resources\edit.png" />
     <None Include="Resources\edit1.png" />
     <Content Include="Resources\employee.png" />
+    <None Include="Resources\export_pdf.png" />
     <Content Include="Resources\icon.ico" />
     <None Include="Resources\logout - Copy.png" />
     <Content Include="Resources\pay.png" />

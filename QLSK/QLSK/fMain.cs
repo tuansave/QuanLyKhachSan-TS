@@ -30,9 +30,9 @@ namespace QLSK
         private void simpleButton2_Click(object sender, EventArgs e)
         {
             fPayInfo f = new fPayInfo();
-            this.Hide();
-            f.ShowDialog();
-            this.Show();
+            this.Close();
+           f.ShowDialog();
+            //this.Show();
         }
 
         private void simpleButton3_Click_1(object sender, EventArgs e)
@@ -105,7 +105,7 @@ namespace QLSK
             fRoom f = new fRoom();
             this.Hide();
             f.ShowDialog();
-            this.Close();
+            
         }
     }
         }

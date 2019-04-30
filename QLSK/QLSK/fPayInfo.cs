@@ -48,8 +48,11 @@ namespace QLSK
 
 
         private void btnBack_Click(object sender, EventArgs e)
-        {
+        { 
+            //reload lại fmain khi thanh toán thành công//
+            fMain f = new fMain();
             this.Close();
+            f.Show();
         }
 
         private void label3_Click(object sender, EventArgs e)

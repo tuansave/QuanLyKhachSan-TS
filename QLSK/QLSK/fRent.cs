@@ -18,7 +18,7 @@ namespace QLSK
         fRoom f = new fRoom();
         int _formality = -1;
         //MainMenu m = new MainMenu();
-        fViewRoom fview;
+   
         public fRent(fRoom room, string roomname/*, MainMenu mainMenu*/)
         {
             InitializeComponent();
@@ -30,10 +30,9 @@ namespace QLSK
             setComboBoxFormality();
             setComboBoxRoomName();
         }
-        public fRent(fViewRoom fv)
+        public fRent()
         {
             InitializeComponent();
-            fview = fv;
             loadComboBoxInDataGridView();
             setComboBoxFormality();
             
@@ -140,7 +139,7 @@ namespace QLSK
             }
             catch (Exception)
             {
-                MessageBox.Show("Nhập đúng định dạng : Tên Phòng , CMND kiểu số , Loại khách hàng(nội địa,nước ngoài)");
+                MessageBox.Show("Dữ liệu sai định dạng!!!");
             }
         }
 

@@ -42,12 +42,12 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.panel7 = new System.Windows.Forms.Panel();
             this.cbListRentID = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.btnBack = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvPay)).BeginInit();
             this.panel3.SuspendLayout();
@@ -195,6 +195,27 @@
             this.panel2.Size = new System.Drawing.Size(415, 368);
             this.panel2.TabIndex = 0;
             // 
+            // simpleButton2
+            // 
+            this.simpleButton2.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.simpleButton2.Appearance.BackColor2 = System.Drawing.Color.White;
+            this.simpleButton2.Appearance.BorderColor = System.Drawing.Color.Transparent;
+            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton2.Appearance.ForeColor = System.Drawing.Color.Navy;
+            this.simpleButton2.Appearance.Options.UseBackColor = true;
+            this.simpleButton2.Appearance.Options.UseBorderColor = true;
+            this.simpleButton2.Appearance.Options.UseFont = true;
+            this.simpleButton2.Appearance.Options.UseForeColor = true;
+            this.simpleButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
+            this.simpleButton2.ImageOptions.Image = global::QLSK.Properties.Resources.check___Copy;
+            this.simpleButton2.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.simpleButton2.Location = new System.Drawing.Point(169, 262);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(246, 87);
+            this.simpleButton2.TabIndex = 11;
+            this.simpleButton2.Text = "Thêm Phiếu Thuê";
+            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
+            // 
             // panel7
             // 
             this.panel7.Controls.Add(this.cbListRentID);
@@ -271,27 +292,6 @@
             this.btnBack.TabIndex = 10;
             this.btnBack.Text = "Trở về";
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
-            // simpleButton2
-            // 
-            this.simpleButton2.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.simpleButton2.Appearance.BackColor2 = System.Drawing.Color.White;
-            this.simpleButton2.Appearance.BorderColor = System.Drawing.Color.Transparent;
-            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton2.Appearance.ForeColor = System.Drawing.Color.Navy;
-            this.simpleButton2.Appearance.Options.UseBackColor = true;
-            this.simpleButton2.Appearance.Options.UseBorderColor = true;
-            this.simpleButton2.Appearance.Options.UseFont = true;
-            this.simpleButton2.Appearance.Options.UseForeColor = true;
-            this.simpleButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
-            this.simpleButton2.ImageOptions.Image = global::QLSK.Properties.Resources.check___Copy;
-            this.simpleButton2.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.simpleButton2.Location = new System.Drawing.Point(278, 265);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(132, 87);
-            this.simpleButton2.TabIndex = 11;
-            this.simpleButton2.Text = "Kiểm Tra";
-            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // fPayInfo
             // 

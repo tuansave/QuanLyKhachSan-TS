@@ -23,11 +23,12 @@ namespace QLSK
         {
             InitializeComponent();
             //m = mainMenu;
-            this.txbRoomName.Text = roomname;
-            this.txbRoomName.ReadOnly = true;
+          //  this.txbRoomName.Text = roomname;
+          //  this.txbRoomName.ReadOnly = true;
             f = room;
             loadComboBoxInDataGridView();
             setComboBoxFormality();
+            setComboBoxRoomName();
         }
         public fRent(fViewRoom fv)
         {
@@ -35,6 +36,7 @@ namespace QLSK
             fview = fv;
             loadComboBoxInDataGridView();
             setComboBoxFormality();
+            
         }
         public fRent(fRoom room)
         {
@@ -42,10 +44,11 @@ namespace QLSK
             f = room;
             loadComboBoxInDataGridView();
             setComboBoxFormality();
+            setComboBoxRoomName();
         }
         private int getRoomCode()
         {
-            return RoomDAO.Instance.ReturnRoomCode(txbRoomName.Text.ToString());
+            return RoomDAO.Instance.ReturnRoomCode(cbxRoomName.Text.ToString());
         }
 
         private void setComboBoxFormality()
@@ -53,6 +56,12 @@ namespace QLSK
             cbxFormality.ValueMember = "MaHinhThucThue";
             cbxFormality.DisplayMember = "TenHinhThucThue";
             cbxFormality.DataSource = DataProvide.Instance.ExecuteQuery(RoomDAO.Instance.setComboBoxformality());
+        }
+        private void setComboBoxRoomName()
+        {
+            cbxRoomName.ValueMember = "TenPhong";
+            cbxRoomName.DisplayMember = "TenPhong";
+            cbxRoomName.DataSource = DataProvide.Instance.ExecuteQuery(RoomDAO.Instance.setComboBoxRoomName());
         }
         private string getBeginDay()
         {
@@ -131,7 +140,7 @@ namespace QLSK
             }
             catch (Exception)
             {
-                MessageBox.Show("Nhập đúng định dạng : Tên Phòng , CMND kiểu số , Loại khách hàng(nội địa,nước ngoài)");
+                MessageBox.Show("Dữ liệu khách hàng không hợp lệ!!!");
             }
         }
 

@@ -33,7 +33,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.customerAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cbxFormality = new System.Windows.Forms.ComboBox();
-            this.txbRoomName = new System.Windows.Forms.TextBox();
             this.dtBeginRent = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -44,6 +43,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.dtgvInputCustomes = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.cbxRoomName = new System.Windows.Forms.ComboBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.btnBack = new DevExpress.XtraEditors.SimpleButton();
@@ -53,6 +53,7 @@
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
+         
             // 
             // panel1
             // 
@@ -85,26 +86,18 @@
             this.cbxFormality.Location = new System.Drawing.Point(392, 17);
             this.cbxFormality.Name = "cbxFormality";
             this.cbxFormality.Size = new System.Drawing.Size(157, 28);
-            this.cbxFormality.TabIndex = 2;
+            this.cbxFormality.TabIndex = 1;
             this.cbxFormality.SelectedValueChanged += new System.EventHandler(this.cbxFormality_SelectedValueChanged);
-            // 
-            // txbRoomName
-            // 
-            this.txbRoomName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbRoomName.Location = new System.Drawing.Point(97, 17);
-            this.txbRoomName.Name = "txbRoomName";
-            this.txbRoomName.Size = new System.Drawing.Size(132, 26);
-            this.txbRoomName.TabIndex = 1;
             // 
             // dtBeginRent
             // 
-            this.dtBeginRent.CustomFormat = "MM/dd/yyyy hh:mm:ss";
+            this.dtBeginRent.CustomFormat = "MM/dd/yyyy HH:mm:ss";
             this.dtBeginRent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtBeginRent.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtBeginRent.Location = new System.Drawing.Point(724, 21);
             this.dtBeginRent.Name = "dtBeginRent";
             this.dtBeginRent.Size = new System.Drawing.Size(293, 26);
-            this.dtBeginRent.TabIndex = 0;
+            this.dtBeginRent.TabIndex = 2;
             // 
             // label3
             // 
@@ -186,13 +179,13 @@
             this.dtgvInputCustomes.Name = "dtgvInputCustomes";
             this.dtgvInputCustomes.RowHeadersWidth = 40;
             this.dtgvInputCustomes.Size = new System.Drawing.Size(1049, 247);
-            this.dtgvInputCustomes.TabIndex = 0;
+            this.dtgvInputCustomes.TabIndex = 1;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.panel2.Controls.Add(this.cbxRoomName);
             this.panel2.Controls.Add(this.cbxFormality);
-            this.panel2.Controls.Add(this.txbRoomName);
             this.panel2.Controls.Add(this.dtBeginRent);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label4);
@@ -200,7 +193,16 @@
             this.panel2.Location = new System.Drawing.Point(0, 52);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1052, 90);
-            this.panel2.TabIndex = 3;
+            this.panel2.TabIndex = 0;
+            // 
+            // cbxRoomName
+            // 
+            this.cbxRoomName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxRoomName.FormattingEnabled = true;
+            this.cbxRoomName.Location = new System.Drawing.Point(93, 15);
+            this.cbxRoomName.Name = "cbxRoomName";
+            this.cbxRoomName.Size = new System.Drawing.Size(157, 28);
+            this.cbxRoomName.TabIndex = 0;
             // 
             // panel4
             // 
@@ -228,7 +230,7 @@
             this.simpleButton1.Location = new System.Drawing.Point(406, 3);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(243, 73);
-            this.simpleButton1.TabIndex = 5;
+            this.simpleButton1.TabIndex = 4;
             this.simpleButton1.Text = "Thuê phòng";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
@@ -249,7 +251,7 @@
             this.btnBack.Location = new System.Drawing.Point(917, 3);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(132, 76);
-            this.btnBack.TabIndex = 4;
+            this.btnBack.TabIndex = 5;
             this.btnBack.Text = "Trở về";
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
@@ -281,7 +283,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn customerAddress;
         private System.Windows.Forms.ComboBox cbxFormality;
-        private System.Windows.Forms.TextBox txbRoomName;
         private System.Windows.Forms.DateTimePicker dtBeginRent;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -295,5 +296,6 @@
         private System.Windows.Forms.Panel panel4;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraEditors.SimpleButton btnBack;
+        private System.Windows.Forms.ComboBox cbxRoomName;
     }
 }

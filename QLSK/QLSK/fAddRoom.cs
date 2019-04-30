@@ -92,16 +92,14 @@ namespace QLSK
                 {
                     MessageBox.Show("Thêm phòng thành công");
                     _fRoom.LoadRoomList();
-                                    //Button button =new addbutton();
-                    //m.AddRoom(button);
-                     //m.ReLoadStatusOfRooms();
+                    this.Hide();
                 }
             }
             catch (Exception ex)
             {
                 if (ex is SqlException)
                 {
-                    MessageBox.Show("Mã phòng không hợp lệ");
+                    MessageBox.Show("Thông tin không hợp lệ!!!");
                 }
 
             }

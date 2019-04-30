@@ -96,6 +96,7 @@ namespace QuanLyKhachSan.DAO
         public string UpdateRoomDatabaseQuery() { /*use PROC in SQL SEVER */return "EXEC dbo.UpdateRoomToDataBase @RoomCodeNew , @RoomName , @RoomStyle , @RoomNote , @RoomStatus , @RoomCodeOld "; }
 
         public string setComboBoxformality() { return "select MaHinhThucThue,TenHinhThucThue from dbo.HINHTHUCTHUE"; }
+        public string setComboBoxRoomName() { return "select TenPhong from dbo.PHONG"; }
         public int ReturnRoomCode(string roomName)
         {
             string query = "select MaPhong from Phong where TenPhong = N'" + roomName + "'";

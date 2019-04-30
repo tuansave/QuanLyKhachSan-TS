@@ -142,6 +142,18 @@
     <Compile Include="fMain.Designer.cs">
       <DependentUpon>fMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="fPayDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPayDetail.Designer.cs">
+      <DependentUpon>fPayDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fPayInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPayInfo.Designer.cs">
+      <DependentUpon>fPayInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="fRent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +194,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fMain.resx">
       <DependentUpon>fMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fPayDetail.resx">
+      <DependentUpon>fPayDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fPayInfo.resx">
+      <DependentUpon>fPayInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fRent.resx">
       <DependentUpon>fRent.cs</DependentUpon>
@@ -231,6 +249,8 @@
     <Content Include="Resources\back.png" />
     <None Include="Resources\back1.png" />
     <Content Include="Resources\change.png" />
+    <None Include="Resources\check - Copy.png" />
+    <None Include="Resources\check_file.png" />
     <Content Include="Resources\delete.png" />
     <None Include="Resources\delete1.png" />
     <Content Include="Resources\edit.png" />

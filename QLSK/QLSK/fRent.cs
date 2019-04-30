@@ -140,7 +140,7 @@ namespace QLSK
             }
             catch (Exception)
             {
-                MessageBox.Show("Dữ liệu khách hàng không hợp lệ!!!");
+                MessageBox.Show("Nhập đúng định dạng : Tên Phòng , CMND kiểu số , Loại khách hàng(nội địa,nước ngoài)");
             }
         }
 

@@ -45,7 +45,10 @@ namespace QLSK
 
         private void simpleButton5_Click(object sender, EventArgs e)
         {
-
+            fChangeRegulations f = new fChangeRegulations();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
         }
 
   
@@ -108,7 +111,6 @@ namespace QLSK
             fRoom f = new fRoom();
             this.Hide();
             f.ShowDialog();
-            this.Show();
         }
     }
         }

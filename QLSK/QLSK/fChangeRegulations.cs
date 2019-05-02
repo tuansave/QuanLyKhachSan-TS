@@ -19,7 +19,39 @@ namespace QLSK
 
         private void button2_Click(object sender, EventArgs e)
         {
+            fChangeNumOfCus f = new fChangeNumOfCus();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
+        }
 
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            fChangeRoomType f = new fChangeRoomType();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            fChangeMaxCus f=new fChangeMaxCus();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            fChangeRate f = new fChangeRate();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
         }
     }
 }

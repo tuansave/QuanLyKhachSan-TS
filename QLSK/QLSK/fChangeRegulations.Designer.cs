@@ -32,10 +32,10 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.btnBack = new DevExpress.XtraEditors.SimpleButton();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -65,6 +65,7 @@
             this.button4.TabIndex = 0;
             this.button4.Text = "Thay đổi tỷ lệ phụ thu";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -77,6 +78,7 @@
             this.button3.TabIndex = 0;
             this.button3.Text = "Lượng khách tối đa";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -91,13 +93,6 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // panel2
-            // 
-            this.panel2.Location = new System.Drawing.Point(3, 60);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(471, 44);
-            this.panel2.TabIndex = 0;
-            // 
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -109,6 +104,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Loại phòng và giá phòng";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel6
             // 
@@ -133,6 +129,13 @@
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "THAY ĐỔI QUY ĐỊNH";
             // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(3, 60);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(471, 44);
+            this.panel2.TabIndex = 0;
+            // 
             // btnBack
             // 
             this.btnBack.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -152,6 +155,7 @@
             this.btnBack.Size = new System.Drawing.Size(132, 87);
             this.btnBack.TabIndex = 12;
             this.btnBack.Text = "Trở về";
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // fChangeRegulations
             // 

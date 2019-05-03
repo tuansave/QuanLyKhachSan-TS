@@ -130,7 +130,12 @@ namespace QuanLyKhachSan.DAO
                 } 
             }
         }
-       
+       public string getMaxCustorm()
+        {
+            string query = "select GiaTri from THAMSO where TenThamSo='KhachToiDa'";
+            string rs = DataProvide.Instance.ExecuteReader(query);
+            return rs;
+        }
 
         public bool checkStatusRoomisRent(int getRoomCode)
         {

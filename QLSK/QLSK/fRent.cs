@@ -109,37 +109,50 @@ namespace QLSK
         }
 
         private void simpleButton1_Click(object sender, EventArgs e)
+
         {
-            try
+            string maxCustorm = RoomDAO.Instance.getMaxCustorm();
+            if (dtgvInputCustomes.Rows.Count > Int32.Parse(maxCustorm)) 
             {
-                if (RoomDAO.Instance.checkStatusRoomisRent(getRoomCode()) == true)  // nếu phòng có thể cho thuê thì trả về true
-                {
-                    getInforCustomer();// tạo một danh sách đối tượng khách hàng thuê phòng
-
-                    RoomDAO.Instance.CreateTenancyCard(getRoomCode(), _formality, getBeginDay(), dtgvInputCustomes.Rows.Count - 1);//tao phieu thue phong
-                    RoomDAO.Instance.CreateTenancyCardDetail(_customer, getRoomCode(), getBeginDay());//tao chitiet-thuephong
-
-                    MessageBox.Show("Tạo phiếu thuê phòng thành công");
-                    LoadListRoomAndCloseForm();
-                    //m.ReLoadRoomStatus();
-                    //m.ReLoadStatusOfRooms();
-                    //m.AddCustomerToBox(_customer[0].CustomerName);
-                    //fViewRoom t = new fViewRoom(m.LoadRoomInfo(getRoomCode()), m.LoadRoomInfor(getRoomCode()), getRoomCode(), m);
-                    //fview = new fViewRoom(t);
-                }
-                else   // phòng đang sửa chữa hoặc đang cho thuê
-                {
-                    if (RoomDAO.Instance.checkStatusRoomisRenting(getRoomCode()) == true) MessageBox.Show("Phòng này đang được cho thuê");
-                    else
-                    {
-                        MessageBox.Show("Phòng này đang được sửa chữa");
-                    }
-                }
+                MessageBox.Show("Vượt số khách hàng cho phép!!!");
+                this.Hide();
+                fRent f = new fRent();
+                f.ShowDialog();
 
             }
-            catch (Exception)
+            else
             {
-                MessageBox.Show("Dữ liệu sai định dạng!!!");
+                try
+                {
+                    if (RoomDAO.Instance.checkStatusRoomisRent(getRoomCode()) == true)  // nếu phòng có thể cho thuê thì trả về true
+                    {
+                        getInforCustomer();// tạo một danh sách đối tượng khách hàng thuê phòng
+
+                        RoomDAO.Instance.CreateTenancyCard(getRoomCode(), _formality, getBeginDay(), dtgvInputCustomes.Rows.Count - 1);//tao phieu thue phong
+                        RoomDAO.Instance.CreateTenancyCardDetail(_customer, getRoomCode(), getBeginDay());//tao chitiet-thuephong
+
+                        MessageBox.Show("Tạo phiếu thuê phòng thành công");
+                        LoadListRoomAndCloseForm();
+                        //m.ReLoadRoomStatus();
+                        //m.ReLoadStatusOfRooms();
+                        //m.AddCustomerToBox(_customer[0].CustomerName);
+                        //fViewRoom t = new fViewRoom(m.LoadRoomInfo(getRoomCode()), m.LoadRoomInfor(getRoomCode()), getRoomCode(), m);
+                        //fview = new fViewRoom(t);
+                    }
+                    else   // phòng đang sửa chữa hoặc đang cho thuê
+                    {
+                        if (RoomDAO.Instance.checkStatusRoomisRenting(getRoomCode()) == true) MessageBox.Show("Phòng này đang được cho thuê");
+                        else
+                        {
+                            MessageBox.Show("Phòng này đang được sửa chữa");
+                        }
+                    }
+
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Dữ liệu sai định dạng!!!");
+                }
             }
         }
 

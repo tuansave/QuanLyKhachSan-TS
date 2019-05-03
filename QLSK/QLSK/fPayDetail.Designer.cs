@@ -87,6 +87,7 @@
             this.txbTotalPrice.Location = new System.Drawing.Point(528, 63);
             this.txbTotalPrice.Multiline = true;
             this.txbTotalPrice.Name = "txbTotalPrice";
+            this.txbTotalPrice.ReadOnly = true;
             this.txbTotalPrice.Size = new System.Drawing.Size(243, 32);
             this.txbTotalPrice.TabIndex = 2;
             // 

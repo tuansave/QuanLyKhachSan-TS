@@ -31,10 +31,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton7 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.flpRoom = new System.Windows.Forms.FlowLayoutPanel();
@@ -78,6 +78,27 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1008, 81);
             this.panel2.TabIndex = 1;
+            // 
+            // simpleButton3
+            // 
+            this.simpleButton3.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.simpleButton3.Appearance.BackColor2 = System.Drawing.Color.White;
+            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton3.Appearance.ForeColor = System.Drawing.Color.Teal;
+            this.simpleButton3.Appearance.Options.UseBackColor = true;
+            this.simpleButton3.Appearance.Options.UseFont = true;
+            this.simpleButton3.Appearance.Options.UseForeColor = true;
+            this.simpleButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.simpleButton3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
+            this.simpleButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.simpleButton3.ImageOptions.Image = global::QLSK.Properties.Resources.services;
+            this.simpleButton3.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.simpleButton3.Location = new System.Drawing.Point(166, 0);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Size = new System.Drawing.Size(173, 81);
+            this.simpleButton3.TabIndex = 1;
+            this.simpleButton3.Text = "Dịch Vụ";
+            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click_1);
             // 
             // simpleButton7
             // 
@@ -142,27 +163,7 @@
             this.simpleButton4.Size = new System.Drawing.Size(168, 81);
             this.simpleButton4.TabIndex = 3;
             this.simpleButton4.Text = "Thống kê";
-            // 
-            // simpleButton3
-            // 
-            this.simpleButton3.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.simpleButton3.Appearance.BackColor2 = System.Drawing.Color.White;
-            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton3.Appearance.ForeColor = System.Drawing.Color.Teal;
-            this.simpleButton3.Appearance.Options.UseBackColor = true;
-            this.simpleButton3.Appearance.Options.UseFont = true;
-            this.simpleButton3.Appearance.Options.UseForeColor = true;
-            this.simpleButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.simpleButton3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
-            this.simpleButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.simpleButton3.ImageOptions.Image = global::QLSK.Properties.Resources.services;
-            this.simpleButton3.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.simpleButton3.Location = new System.Drawing.Point(166, 0);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(173, 81);
-            this.simpleButton3.TabIndex = 1;
-            this.simpleButton3.Text = "Dịch Vụ";
-            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click_1);
+            this.simpleButton4.Click += new System.EventHandler(this.simpleButton4_Click);
             // 
             // simpleButton2
             // 

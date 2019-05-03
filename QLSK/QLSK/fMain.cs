@@ -112,7 +112,15 @@ namespace QLSK
             this.Hide();
             f.ShowDialog();
         }
-    }
+
+        private void simpleButton4_Click(object sender, EventArgs e)
+        {
+            fReport f = new fReport();
+            this.Hide();
+            f.ShowDialog();
         }
+    }
+
+}
     
 

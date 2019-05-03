@@ -48,6 +48,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.btnBack = new DevExpress.XtraEditors.SimpleButton();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvPay)).BeginInit();
             this.panel3.SuspendLayout();
@@ -55,6 +56,7 @@
             this.panel2.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // txbCusName
@@ -69,11 +71,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(300, 9);
+            this.label3.Location = new System.Drawing.Point(267, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(363, 42);
+            this.label3.Size = new System.Drawing.Size(477, 42);
             this.label3.TabIndex = 9;
-            this.label3.Text = "Lập phiếu thanh toán";
+            this.label3.Text = "LẬP PHIẾU THANH TOÁN";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // panel5
@@ -240,9 +242,9 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.simpleButton1);
             this.panel1.Controls.Add(this.btnBack);
-            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.ForeColor = System.Drawing.Color.Black;
@@ -293,6 +295,15 @@
             this.btnBack.Text = "Trở về";
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel6.Controls.Add(this.label3);
+            this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1012, 74);
+            this.panel6.TabIndex = 12;
+            // 
             // fPayInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -313,7 +324,8 @@
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -340,5 +352,6 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraEditors.SimpleButton btnBack;
+        private System.Windows.Forms.Panel panel6;
     }
 }

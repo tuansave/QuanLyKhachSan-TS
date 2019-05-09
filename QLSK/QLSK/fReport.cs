@@ -37,8 +37,20 @@ namespace QLSK
         {
             int _month = dtp.Value.Month, _year = dtp.Value.Year;
 
-            dtgvReport.DataSource = ReportDAO.Instance.ViewReport(_month, _year);
 
+            try
+            {
+             
+                ReportDAO.Instance.CreateReport(_month, _year);
+                MessageBox.Show("Tạo báo cáo thành công!");
+            }
+            catch
+            {
+                MessageBox.Show("Tạo báo cáo thành công!");
+            }
+            dtgvReport.DataSource = ReportDAO.Instance.ViewReport(_month, _year);
+            rp1.Hide();
+            rp1.Show();
         }
 
         private void fReport_Load(object sender, EventArgs e)
@@ -49,6 +61,21 @@ namespace QLSK
         }
 
         private void chartControl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtp_ValueChanged(object sender, EventArgs e)
+        {
+                
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void dtgvReport_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

@@ -118,6 +118,7 @@ namespace QLSK
             fReport f = new fReport();
             this.Hide();
             f.ShowDialog();
+            this.Show();
         }
     }
 

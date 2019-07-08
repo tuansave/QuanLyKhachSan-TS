@@ -100,10 +100,6 @@ namespace QLSK
             customerStyle.DataSource = DataProvide.Instance.ExecuteQuery("select * from LOAI_KHACHHANG ");
         }
 
-
-
-
-
         private void fRent_Load(object sender, EventArgs e)
         {
 
@@ -127,19 +123,14 @@ namespace QLSK
                 {
                     if (RoomDAO.Instance.checkStatusRoomisRent(getRoomCode()) == true)  // nếu phòng có thể cho thuê thì trả về true
                     {
-                        getInforCustomer();// tạo một danh sách đối tượng khách hàng thuê phòng
-                        MessageBox.Show(_formality.ToString());
-                        MessageBox.Show(getRoomCode() + "    " + _formality + "    " + getBeginDay() + "    " + dtgvInputCustomes.Rows.Count.ToString());
+                        getInforCustomer();// tạo một danh sách đối tượng khách hàng thuê phòng                      
+                        //MessageBox.Show(getRoomCode() + "    " + _formality + "    " + getBeginDay() + "    " + dtgvInputCustomes.Rows.Count.ToString());
                         RoomDAO.Instance.CreateTenancyCard(getRoomCode(), _formality, getBeginDay(), dtgvInputCustomes.Rows.Count - 1);//tao phieu thue phong
                         RoomDAO.Instance.CreateTenancyCardDetail(_customer, getRoomCode(), getBeginDay());//tao chitiet-thuephong
 
                         MessageBox.Show("Tạo phiếu thuê phòng thành công");
                         LoadListRoomAndCloseForm();
-                        //m.ReLoadRoomStatus();
-                        //m.ReLoadStatusOfRooms();
-                        //m.AddCustomerToBox(_customer[0].CustomerName);
-                        //fViewRoom t = new fViewRoom(m.LoadRoomInfo(getRoomCode()), m.LoadRoomInfor(getRoomCode()), getRoomCode(), m);
-                        //fview = new fViewRoom(t);
+                        
                     }
                     else   // phòng đang sửa chữa hoặc đang cho thuê
                     {

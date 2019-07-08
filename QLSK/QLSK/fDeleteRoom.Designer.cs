@@ -105,7 +105,7 @@
             this.btnDelete.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
             this.btnDelete.ImageOptions.Image = global::QLSK.Properties.Resources.delete;
             this.btnDelete.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.btnDelete.Location = new System.Drawing.Point(305, 400);
+            this.btnDelete.Location = new System.Drawing.Point(50, 400);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(159, 87);
             this.btnDelete.TabIndex = 8;
@@ -128,7 +128,7 @@
             this.btnBack.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
             this.btnBack.Location = new System.Drawing.Point(645, 405);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(169, 76);
+            this.btnBack.Size = new System.Drawing.Size(169, 87);
             this.btnBack.TabIndex = 9;
             this.btnBack.Text = "Trở về";
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
@@ -144,7 +144,8 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label2);
             this.Name = "fDeleteRoom";
-            this.Text = "fDeleteRoon";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Xoá phòng";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

@@ -18,36 +18,37 @@ namespace QLSK
         fRoom f = new fRoom();
         int _formality = -1;
         //MainMenu m = new MainMenu();
-   
-        public fRent(fRoom room, string roomname/*, MainMenu mainMenu*/)
+
+        public fRent(fRoom room, string roomname)
         {
             InitializeComponent();
             //m = mainMenu;
-          //  this.txbRoomName.Text = roomname;
-          //  this.txbRoomName.ReadOnly = true;
+            //  this.txbRoomName.Text = roomname;
+            // this.cbxRoomName.ReadOnly = true;
             f = room;
             loadComboBoxInDataGridView();
             setComboBoxFormality();
-            setComboBoxRoomName();
+            setComboBoxRoomCode();
         }
         public fRent()
         {
             InitializeComponent();
             loadComboBoxInDataGridView();
             setComboBoxFormality();
-            
+
         }
+
         public fRent(fRoom room)
         {
             InitializeComponent();
             f = room;
             loadComboBoxInDataGridView();
             setComboBoxFormality();
-            setComboBoxRoomName();
+            setComboBoxRoomCode();
         }
         private int getRoomCode()
         {
-            return RoomDAO.Instance.ReturnRoomCode(cbxRoomName.Text.ToString());
+            return int.Parse(cbxRoomCode.Text.ToString());
         }
 
         private void setComboBoxFormality()
@@ -56,11 +57,11 @@ namespace QLSK
             cbxFormality.DisplayMember = "TenHinhThucThue";
             cbxFormality.DataSource = DataProvide.Instance.ExecuteQuery(RoomDAO.Instance.setComboBoxformality());
         }
-        private void setComboBoxRoomName()
+        private void setComboBoxRoomCode()
         {
-            cbxRoomName.ValueMember = "TenPhong";
-            cbxRoomName.DisplayMember = "TenPhong";
-            cbxRoomName.DataSource = DataProvide.Instance.ExecuteQuery(RoomDAO.Instance.setComboBoxRoomName());
+            cbxRoomCode.ValueMember = "MaPhong";
+            cbxRoomCode.DisplayMember = "MaPhong";
+            cbxRoomCode.DataSource = DataProvide.Instance.ExecuteQuery(RoomDAO.Instance.setComboBoxRoomCode());
         }
         private string getBeginDay()
         {
@@ -103,7 +104,7 @@ namespace QLSK
 
 
 
-            private void fRent_Load(object sender, EventArgs e)
+        private void fRent_Load(object sender, EventArgs e)
         {
 
         }
@@ -112,7 +113,7 @@ namespace QLSK
 
         {
             string maxCustorm = RoomDAO.Instance.getMaxCustorm();
-            if (dtgvInputCustomes.Rows.Count > Int32.Parse(maxCustorm)) 
+            if (dtgvInputCustomes.Rows.Count > Int32.Parse(maxCustorm))
             {
                 MessageBox.Show("Vượt số khách hàng cho phép!!!");
                 this.Hide();
@@ -127,7 +128,8 @@ namespace QLSK
                     if (RoomDAO.Instance.checkStatusRoomisRent(getRoomCode()) == true)  // nếu phòng có thể cho thuê thì trả về true
                     {
                         getInforCustomer();// tạo một danh sách đối tượng khách hàng thuê phòng
-
+                        MessageBox.Show(_formality.ToString());
+                        MessageBox.Show(getRoomCode() + "    " + _formality + "    " + getBeginDay() + "    " + dtgvInputCustomes.Rows.Count.ToString());
                         RoomDAO.Instance.CreateTenancyCard(getRoomCode(), _formality, getBeginDay(), dtgvInputCustomes.Rows.Count - 1);//tao phieu thue phong
                         RoomDAO.Instance.CreateTenancyCardDetail(_customer, getRoomCode(), getBeginDay());//tao chitiet-thuephong
 
@@ -156,7 +158,25 @@ namespace QLSK
             }
         }
 
-        private void cbxFormality_SelectedValueChanged(object sender, EventArgs e)
+
+        private void btnDelete_Click_1(object sender, EventArgs e)
+        {
+            if (dtgvInputCustomes.Rows.Count > 0)
+            {
+                foreach (DataGridViewRow item in this.dtgvInputCustomes.SelectedRows)
+                {
+                    dtgvInputCustomes.Rows.RemoveAt(item.Index);
+                }
+            }
+        }
+
+        private void btnBack_Click_1(object sender, EventArgs e)
+        {
+
+            this.Close();
+        }
+
+        private void cbxFormality_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cbxFormality.SelectedItem != null)
             {
@@ -165,9 +185,8 @@ namespace QLSK
             }
         }
 
-        private void btnBack_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+       
     }
 }
+
+

@@ -229,6 +229,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Name = "fPayDetail";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chi tiết hoá đơn";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.fPayDetail_FormClosed);
             this.panel1.ResumeLayout(false);

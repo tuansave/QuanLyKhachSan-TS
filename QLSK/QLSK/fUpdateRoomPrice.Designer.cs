@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnBack = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txbRoomTypeName = new System.Windows.Forms.TextBox();
             this.cbListRoomType = new System.Windows.Forms.ComboBox();
@@ -40,8 +42,6 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.btnBack = new DevExpress.XtraEditors.SimpleButton();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -58,6 +58,48 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(379, 265);
             this.panel1.TabIndex = 3;
+            // 
+            // btnBack
+            // 
+            this.btnBack.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.btnBack.Appearance.BackColor2 = System.Drawing.Color.White;
+            this.btnBack.Appearance.BorderColor = System.Drawing.Color.Transparent;
+            this.btnBack.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.btnBack.Appearance.Options.UseBackColor = true;
+            this.btnBack.Appearance.Options.UseBorderColor = true;
+            this.btnBack.Appearance.Options.UseFont = true;
+            this.btnBack.Appearance.Options.UseForeColor = true;
+            this.btnBack.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
+            this.btnBack.ImageOptions.Image = global::QLSK.Properties.Resources.back;
+            this.btnBack.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.btnBack.Location = new System.Drawing.Point(245, 186);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(132, 76);
+            this.btnBack.TabIndex = 14;
+            this.btnBack.Text = "Trở về";
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.simpleButton1.Appearance.BackColor2 = System.Drawing.Color.White;
+            this.simpleButton1.Appearance.BorderColor = System.Drawing.Color.Transparent;
+            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton1.Appearance.ForeColor = System.Drawing.Color.Blue;
+            this.simpleButton1.Appearance.Options.UseBackColor = true;
+            this.simpleButton1.Appearance.Options.UseBorderColor = true;
+            this.simpleButton1.Appearance.Options.UseFont = true;
+            this.simpleButton1.Appearance.Options.UseForeColor = true;
+            this.simpleButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
+            this.simpleButton1.ImageOptions.Image = global::QLSK.Properties.Resources.update;
+            this.simpleButton1.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.simpleButton1.Location = new System.Drawing.Point(36, 186);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(160, 76);
+            this.simpleButton1.TabIndex = 11;
+            this.simpleButton1.Text = "Cập nhật";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // panel3
             // 
@@ -169,48 +211,6 @@
             this.panel4.Size = new System.Drawing.Size(471, 44);
             this.panel4.TabIndex = 0;
             // 
-            // simpleButton1
-            // 
-            this.simpleButton1.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.simpleButton1.Appearance.BackColor2 = System.Drawing.Color.White;
-            this.simpleButton1.Appearance.BorderColor = System.Drawing.Color.Transparent;
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton1.Appearance.ForeColor = System.Drawing.Color.Blue;
-            this.simpleButton1.Appearance.Options.UseBackColor = true;
-            this.simpleButton1.Appearance.Options.UseBorderColor = true;
-            this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.Appearance.Options.UseForeColor = true;
-            this.simpleButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
-            this.simpleButton1.ImageOptions.Image = global::QLSK.Properties.Resources.update;
-            this.simpleButton1.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.simpleButton1.Location = new System.Drawing.Point(36, 186);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(160, 76);
-            this.simpleButton1.TabIndex = 11;
-            this.simpleButton1.Text = "Cập nhật";
-            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
-            // 
-            // btnBack
-            // 
-            this.btnBack.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.btnBack.Appearance.BackColor2 = System.Drawing.Color.White;
-            this.btnBack.Appearance.BorderColor = System.Drawing.Color.Transparent;
-            this.btnBack.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.btnBack.Appearance.Options.UseBackColor = true;
-            this.btnBack.Appearance.Options.UseBorderColor = true;
-            this.btnBack.Appearance.Options.UseFont = true;
-            this.btnBack.Appearance.Options.UseForeColor = true;
-            this.btnBack.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
-            this.btnBack.ImageOptions.Image = global::QLSK.Properties.Resources.back;
-            this.btnBack.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.btnBack.Location = new System.Drawing.Point(245, 186);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(132, 76);
-            this.btnBack.TabIndex = 14;
-            this.btnBack.Text = "Trở về";
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
             // fUpdateRoomPrice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -219,7 +219,8 @@
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel1);
             this.Name = "fUpdateRoomPrice";
-            this.Text = "fUpdateRoomPrice";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Cập nhật đơn giá";
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();

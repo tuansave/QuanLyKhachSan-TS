@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.txbMasCusNew = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.txbMasCusOld = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
@@ -55,6 +55,14 @@
             this.panel2.Size = new System.Drawing.Size(341, 55);
             this.panel2.TabIndex = 0;
             // 
+            // txbMasCusNew
+            // 
+            this.txbMasCusNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbMasCusNew.Location = new System.Drawing.Point(249, 13);
+            this.txbMasCusNew.Name = "txbMasCusNew";
+            this.txbMasCusNew.Size = new System.Drawing.Size(78, 26);
+            this.txbMasCusNew.TabIndex = 1;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -67,14 +75,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Nhập số lượng khách tối đa mới :";
             // 
-            // txbMasCusNew
-            // 
-            this.txbMasCusNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbMasCusNew.Location = new System.Drawing.Point(249, 13);
-            this.txbMasCusNew.Name = "txbMasCusNew";
-            this.txbMasCusNew.Size = new System.Drawing.Size(78, 26);
-            this.txbMasCusNew.TabIndex = 1;
-            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.txbMasCusOld);
@@ -83,6 +83,16 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(341, 55);
             this.panel4.TabIndex = 2;
+            // 
+            // txbMasCusOld
+            // 
+            this.txbMasCusOld.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbMasCusOld.Location = new System.Drawing.Point(249, 13);
+            this.txbMasCusOld.Name = "txbMasCusOld";
+            this.txbMasCusOld.ReadOnly = true;
+            this.txbMasCusOld.Size = new System.Drawing.Size(82, 26);
+            this.txbMasCusOld.TabIndex = 1;
+            this.txbMasCusOld.TextChanged += new System.EventHandler(this.txbMasCusOld_TextChanged);
             // 
             // label2
             // 
@@ -95,16 +105,6 @@
             this.label2.Size = new System.Drawing.Size(225, 20);
             this.label2.TabIndex = 0;
             this.label2.Text = "Số lượng khách tối đa hiện tại :";
-            // 
-            // txbMasCusOld
-            // 
-            this.txbMasCusOld.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbMasCusOld.Location = new System.Drawing.Point(249, 13);
-            this.txbMasCusOld.Name = "txbMasCusOld";
-            this.txbMasCusOld.ReadOnly = true;
-            this.txbMasCusOld.Size = new System.Drawing.Size(82, 26);
-            this.txbMasCusOld.TabIndex = 1;
-            this.txbMasCusOld.TextChanged += new System.EventHandler(this.txbMasCusOld_TextChanged);
             // 
             // panel1
             // 
@@ -197,7 +197,8 @@
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel1);
             this.Name = "fChangeMaxCus";
-            this.Text = "fChangeMaxCus";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Thay đổi khách tối đa";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);

@@ -46,9 +46,9 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.cbListRentID = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.btnBack = new DevExpress.XtraEditors.SimpleButton();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvPay)).BeginInit();
             this.panel3.SuspendLayout();
@@ -253,6 +253,15 @@
             this.panel1.Size = new System.Drawing.Size(1012, 420);
             this.panel1.TabIndex = 6;
             // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel6.Controls.Add(this.label3);
+            this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1012, 74);
+            this.panel6.TabIndex = 12;
+            // 
             // simpleButton1
             // 
             this.simpleButton1.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -295,15 +304,6 @@
             this.btnBack.Text = "Trở về";
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.panel6.Controls.Add(this.label3);
-            this.panel6.Location = new System.Drawing.Point(0, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1012, 74);
-            this.panel6.TabIndex = 12;
-            // 
             // fPayInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -311,6 +311,7 @@
             this.ClientSize = new System.Drawing.Size(1011, 420);
             this.Controls.Add(this.panel1);
             this.Name = "fPayInfo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tạo hoá đơn";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.fPayInfo_FormClosed);
             this.panel5.ResumeLayout(false);

@@ -25,9 +25,16 @@ namespace QLSK
             _fRoom = f;
             setDataStatusRoomNew();
             setDataStyleRoomNew();
-           
+            setComboxRoomCode();
             m = main;
         }
+       private void setComboxRoomCode()
+        {
+          cbxRoomCode.ValueMember = "MaPhong";
+         //   cbxRoomCode.DisplayMember = "MaPhong";
+            cbxRoomCode.DataSource = DataProvide.Instance.ExecuteQuery(RoomDAO.Instance.setComboBoxRoomCode());
+        }
+
         public string[] GetRoomChangedInfo(Button btn)
         {
             string ChangedValue = "";
@@ -70,6 +77,7 @@ namespace QLSK
 
         private int getRoomCodeOld()
         {
+            txbRoomCodeOld.Text = cbxRoomCode.Text;
             return int.Parse(txbRoomCodeOld.Text.ToString());
 
         }
@@ -127,6 +135,7 @@ namespace QLSK
             }
         }
 
+      
         private void simpleButton1_Click(object sender, EventArgs e)
         {
             try
@@ -157,5 +166,6 @@ namespace QLSK
                 MessageBox.Show("Nhập thông tin cần sửa");
             }
         }
+
     }
 }

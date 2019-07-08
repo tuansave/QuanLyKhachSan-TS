@@ -33,13 +33,7 @@ namespace QuanLyKhachSan.DAO
             if (rs.Rows.Count > 0) return true;
             return false;
         }
-        public bool checkUserName(string userName)
-        {
-            string query = "if exists (select TenDangNhap from NGUOI_DUNG where TenDangNhap = N'" + userName + "')select 1";
-            DataTable rs = DataProvide.Instance.ExecuteQuery(query);
-            if (rs.Rows.Count > 0) return true;
-            return false;
-        }
+
 
         
 

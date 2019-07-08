@@ -224,7 +224,8 @@
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel1);
             this.Name = "fAddRoomType";
-            this.Text = "fRoomType";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Thêm loại phòng";
             this.panel4.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

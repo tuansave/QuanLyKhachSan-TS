@@ -46,11 +46,11 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnBack = new DevExpress.XtraEditors.SimpleButton();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btnAccept = new DevExpress.XtraEditors.SimpleButton();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnBack = new DevExpress.XtraEditors.SimpleButton();
-            this.btnAccept = new DevExpress.XtraEditors.SimpleButton();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvHistoryService)).BeginInit();
             this.panel5.SuspendLayout();
@@ -250,38 +250,6 @@
             this.panel3.Size = new System.Drawing.Size(1096, 431);
             this.panel3.TabIndex = 1;
             // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.btnAccept);
-            this.panel4.Controls.Add(this.panel9);
-            this.panel4.Controls.Add(this.panel8);
-            this.panel4.Controls.Add(this.panel6);
-            this.panel4.Controls.Add(this.panel7);
-            this.panel4.Location = new System.Drawing.Point(7, 76);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(431, 352);
-            this.panel4.TabIndex = 1;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.panel7.Controls.Add(this.cbListService);
-            this.panel7.Controls.Add(this.label5);
-            this.panel7.Location = new System.Drawing.Point(6, 157);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(414, 33);
-            this.panel7.TabIndex = 2;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Location = new System.Drawing.Point(1, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1111, 521);
-            this.panel1.TabIndex = 1;
-            // 
             // btnBack
             // 
             this.btnBack.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -302,6 +270,18 @@
             this.btnBack.TabIndex = 11;
             this.btnBack.Text = "Trở về";
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.btnAccept);
+            this.panel4.Controls.Add(this.panel9);
+            this.panel4.Controls.Add(this.panel8);
+            this.panel4.Controls.Add(this.panel6);
+            this.panel4.Controls.Add(this.panel7);
+            this.panel4.Location = new System.Drawing.Point(7, 76);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(431, 352);
+            this.panel4.TabIndex = 1;
             // 
             // btnAccept
             // 
@@ -324,6 +304,26 @@
             this.btnAccept.Text = "Sử dụng";
             this.btnAccept.Click += new System.EventHandler(this.btnAccept_Click);
             // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel7.Controls.Add(this.cbListService);
+            this.panel7.Controls.Add(this.label5);
+            this.panel7.Location = new System.Drawing.Point(6, 157);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(414, 33);
+            this.panel7.TabIndex = 2;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Location = new System.Drawing.Point(1, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1111, 521);
+            this.panel1.TabIndex = 1;
+            // 
             // fService
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -331,7 +331,8 @@
             this.ClientSize = new System.Drawing.Size(1107, 509);
             this.Controls.Add(this.panel1);
             this.Name = "fService";
-            this.Text = "fServices";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Dịch vụ";
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvHistoryService)).EndInit();

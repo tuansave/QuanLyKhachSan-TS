@@ -212,6 +212,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel6);
             this.Name = "fReport";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Báo cáo";
             this.Load += new System.EventHandler(this.fReport_Load);
             this.panel6.ResumeLayout(false);

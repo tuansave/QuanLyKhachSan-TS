@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txbRoomName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.customerAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cbxFormality = new System.Windows.Forms.ComboBox();
@@ -43,8 +44,9 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.dtgvInputCustomes = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.cbxRoomName = new System.Windows.Forms.ComboBox();
+            this.cbxRoomCode = new System.Windows.Forms.ComboBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.btnBack = new DevExpress.XtraEditors.SimpleButton();
             this.panel1.SuspendLayout();
@@ -53,16 +55,24 @@
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
-         
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Goldenrod;
+            this.panel1.Controls.Add(this.txbRoomName);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, -3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1052, 66);
             this.panel1.TabIndex = 1;
+            // 
+            // txbRoomName
+            // 
+            this.txbRoomName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbRoomName.Location = new System.Drawing.Point(93, 26);
+            this.txbRoomName.Name = "txbRoomName";
+            this.txbRoomName.Size = new System.Drawing.Size(132, 26);
+            this.txbRoomName.TabIndex = 5;
             // 
             // label1
             // 
@@ -87,7 +97,7 @@
             this.cbxFormality.Name = "cbxFormality";
             this.cbxFormality.Size = new System.Drawing.Size(157, 28);
             this.cbxFormality.TabIndex = 1;
-            this.cbxFormality.SelectedValueChanged += new System.EventHandler(this.cbxFormality_SelectedValueChanged);
+            this.cbxFormality.SelectedIndexChanged += new System.EventHandler(this.cbxFormality_SelectedIndexChanged);
             // 
             // dtBeginRent
             // 
@@ -145,9 +155,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(3, 20);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 20);
+            this.label2.Size = new System.Drawing.Size(88, 20);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Tên Phòng :";
+            this.label2.Text = "Mã phòng :";
             // 
             // panel3
             // 
@@ -161,14 +171,14 @@
             // 
             this.dtgvInputCustomes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvInputCustomes.BackgroundColor = System.Drawing.Color.DarkGray;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvInputCustomes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvInputCustomes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dtgvInputCustomes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvInputCustomes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.customerName,
@@ -184,7 +194,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.panel2.Controls.Add(this.cbxRoomName);
+            this.panel2.Controls.Add(this.cbxRoomCode);
             this.panel2.Controls.Add(this.cbxFormality);
             this.panel2.Controls.Add(this.dtBeginRent);
             this.panel2.Controls.Add(this.label3);
@@ -195,17 +205,19 @@
             this.panel2.Size = new System.Drawing.Size(1052, 90);
             this.panel2.TabIndex = 0;
             // 
-            // cbxRoomName
+            // cbxRoomCode
             // 
-            this.cbxRoomName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxRoomName.FormattingEnabled = true;
-            this.cbxRoomName.Location = new System.Drawing.Point(93, 15);
-            this.cbxRoomName.Name = "cbxRoomName";
-            this.cbxRoomName.Size = new System.Drawing.Size(157, 28);
-            this.cbxRoomName.TabIndex = 0;
+            this.cbxRoomCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxRoomCode.FormattingEnabled = true;
+            this.cbxRoomCode.Location = new System.Drawing.Point(93, 15);
+            this.cbxRoomCode.Name = "cbxRoomCode";
+            this.cbxRoomCode.Size = new System.Drawing.Size(157, 28);
+            this.cbxRoomCode.TabIndex = 0;
+           
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.btnDelete);
             this.panel4.Controls.Add(this.simpleButton1);
             this.panel4.Controls.Add(this.btnBack);
             this.panel4.Location = new System.Drawing.Point(0, 390);
@@ -213,13 +225,34 @@
             this.panel4.Size = new System.Drawing.Size(1052, 79);
             this.panel4.TabIndex = 4;
             // 
+            // btnDelete
+            // 
+            this.btnDelete.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.btnDelete.Appearance.BackColor2 = System.Drawing.Color.White;
+            this.btnDelete.Appearance.BorderColor = System.Drawing.Color.Transparent;
+            this.btnDelete.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.btnDelete.Appearance.Options.UseBackColor = true;
+            this.btnDelete.Appearance.Options.UseBorderColor = true;
+            this.btnDelete.Appearance.Options.UseFont = true;
+            this.btnDelete.Appearance.Options.UseForeColor = true;
+            this.btnDelete.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
+            this.btnDelete.ImageOptions.Image = global::QLSK.Properties.Resources.delete;
+            this.btnDelete.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.btnDelete.Location = new System.Drawing.Point(93, 3);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(173, 73);
+            this.btnDelete.TabIndex = 6;
+            this.btnDelete.Text = "Xoá khách hàng";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click_1);
+            // 
             // simpleButton1
             // 
             this.simpleButton1.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.simpleButton1.Appearance.BackColor2 = System.Drawing.Color.White;
             this.simpleButton1.Appearance.BorderColor = System.Drawing.Color.Transparent;
             this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton1.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.simpleButton1.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.simpleButton1.Appearance.Options.UseBackColor = true;
             this.simpleButton1.Appearance.Options.UseBorderColor = true;
             this.simpleButton1.Appearance.Options.UseFont = true;
@@ -227,7 +260,7 @@
             this.simpleButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
             this.simpleButton1.ImageOptions.Image = global::QLSK.Properties.Resources.rent3;
             this.simpleButton1.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.simpleButton1.Location = new System.Drawing.Point(406, 3);
+            this.simpleButton1.Location = new System.Drawing.Point(392, 3);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(243, 73);
             this.simpleButton1.TabIndex = 4;
@@ -253,7 +286,7 @@
             this.btnBack.Size = new System.Drawing.Size(132, 76);
             this.btnBack.TabIndex = 5;
             this.btnBack.Text = "Trở về";
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click_1);
             // 
             // fRent
             // 
@@ -265,7 +298,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel4);
             this.Name = "fRent";
-            this.Text = "fRent";
+            this.Text = "Phiếu thuê phòng";
             this.Load += new System.EventHandler(this.fRent_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -296,6 +329,8 @@
         private System.Windows.Forms.Panel panel4;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraEditors.SimpleButton btnBack;
-        private System.Windows.Forms.ComboBox cbxRoomName;
+        private System.Windows.Forms.ComboBox cbxRoomCode;
+        private DevExpress.XtraEditors.SimpleButton btnDelete;
+        private System.Windows.Forms.TextBox txbRoomName;
     }
 }

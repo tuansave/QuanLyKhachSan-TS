@@ -1,4 +1,5 @@
 ﻿using QuanLyKhachSan.DAO;
+using QuanLyKhachSan.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,13 +12,20 @@ using System.Windows.Forms;
 
 namespace QLSK
 {
+    
     public partial class fRoom : Form
     {
+        RoomDTO _room = new RoomDTO();
+       public  int oldRoomCode;
+
+       
         public fRoom()
         {
             InitializeComponent();
             LoadRoomList();
+            
         }
+       
        public void LoadRoomList()
         {
             dtgvRoom.DataSource = DataProvide.Instance.ExecuteQuery(RoomDAO.Instance.ExecuteLoadInforRoomQuery());
@@ -55,6 +63,8 @@ namespace QLSK
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
+           
+            
             fEditRoom f = new fEditRoom();
             this.Hide();
             f.ShowDialog();
@@ -68,5 +78,6 @@ namespace QLSK
             f.ShowDialog();
             this.Show();
         }
+
     }
 }

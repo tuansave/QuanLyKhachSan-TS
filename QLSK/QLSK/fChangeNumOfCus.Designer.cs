@@ -59,7 +59,6 @@
             this.txbCusTypeID.Name = "txbCusTypeID";
             this.txbCusTypeID.Size = new System.Drawing.Size(134, 26);
             this.txbCusTypeID.TabIndex = 1;
-            this.txbCusTypeID.UseWaitCursor = false;
             // 
             // label3
             // 
@@ -218,6 +217,7 @@
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
             this.Name = "fChangeNumOfCus";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thêm loại khách ";
             this.panel9.ResumeLayout(false);
             this.panel4.ResumeLayout(false);

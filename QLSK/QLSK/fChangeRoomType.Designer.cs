@@ -175,6 +175,7 @@
             this.ClientSize = new System.Drawing.Size(749, 395);
             this.Controls.Add(this.panel5);
             this.Name = "fChangeRoomType";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chình sửa loại phòng";
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);

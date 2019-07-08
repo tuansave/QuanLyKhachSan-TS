@@ -303,7 +303,8 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "fSearch";
-            this.Text = "fSearch";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Tra cứu thông tin phòng";
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDataRoom)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();

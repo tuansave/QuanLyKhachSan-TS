@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnBack = new DevExpress.XtraEditors.SimpleButton();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -36,7 +37,6 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnBack = new DevExpress.XtraEditors.SimpleButton();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.SuspendLayout();
@@ -53,6 +53,27 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 351);
             this.panel1.TabIndex = 3;
+            // 
+            // btnBack
+            // 
+            this.btnBack.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.btnBack.Appearance.BackColor2 = System.Drawing.Color.White;
+            this.btnBack.Appearance.BorderColor = System.Drawing.Color.Transparent;
+            this.btnBack.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.btnBack.Appearance.Options.UseBackColor = true;
+            this.btnBack.Appearance.Options.UseBorderColor = true;
+            this.btnBack.Appearance.Options.UseFont = true;
+            this.btnBack.Appearance.Options.UseForeColor = true;
+            this.btnBack.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
+            this.btnBack.ImageOptions.Image = global::QLSK.Properties.Resources.back;
+            this.btnBack.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.btnBack.Location = new System.Drawing.Point(656, 248);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(132, 87);
+            this.btnBack.TabIndex = 12;
+            this.btnBack.Text = "Trở về";
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // button4
             // 
@@ -136,27 +157,6 @@
             this.panel2.Size = new System.Drawing.Size(471, 44);
             this.panel2.TabIndex = 0;
             // 
-            // btnBack
-            // 
-            this.btnBack.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.btnBack.Appearance.BackColor2 = System.Drawing.Color.White;
-            this.btnBack.Appearance.BorderColor = System.Drawing.Color.Transparent;
-            this.btnBack.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.btnBack.Appearance.Options.UseBackColor = true;
-            this.btnBack.Appearance.Options.UseBorderColor = true;
-            this.btnBack.Appearance.Options.UseFont = true;
-            this.btnBack.Appearance.Options.UseForeColor = true;
-            this.btnBack.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
-            this.btnBack.ImageOptions.Image = global::QLSK.Properties.Resources.back;
-            this.btnBack.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.btnBack.Location = new System.Drawing.Point(318, 248);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(132, 87);
-            this.btnBack.TabIndex = 12;
-            this.btnBack.Text = "Trở về";
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
             // fChangeRegulations
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -164,6 +164,7 @@
             this.ClientSize = new System.Drawing.Size(800, 337);
             this.Controls.Add(this.panel1);
             this.Name = "fChangeRegulations";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thay đổi quy định";
             this.panel1.ResumeLayout(false);
             this.panel6.ResumeLayout(false);

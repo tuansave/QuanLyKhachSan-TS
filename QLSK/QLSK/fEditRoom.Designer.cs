@@ -34,7 +34,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.txbRoomCodeOld = new System.Windows.Forms.TextBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.txbRoomNameNew = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -49,6 +48,8 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.cbxRoomStatusNew = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.txbRoomCodeOld = new System.Windows.Forms.TextBox();
+            this.cbxRoomCode = new System.Windows.Forms.ComboBox();
             this.panel7.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -110,19 +111,10 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label2.Location = new System.Drawing.Point(30, 72);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(140, 20);
+            this.label2.Size = new System.Drawing.Size(144, 20);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Mã phòng cần sửa";
+            this.label2.Text = "Mã phòng cần sửa:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // txbRoomCodeOld
-            // 
-            this.txbRoomCodeOld.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbRoomCodeOld.Location = new System.Drawing.Point(178, 66);
-            this.txbRoomCodeOld.Name = "txbRoomCodeOld";
-            this.txbRoomCodeOld.Size = new System.Drawing.Size(86, 26);
-            this.txbRoomCodeOld.TabIndex = 0;
-            this.txbRoomCodeOld.TextChanged += new System.EventHandler(this.txbRoomCodeOld_TextChanged);
             // 
             // panel8
             // 
@@ -255,6 +247,7 @@
             // 
             this.panel6.Controls.Add(this.cbxRoomStatusNew);
             this.panel6.Controls.Add(this.label4);
+            this.panel6.Controls.Add(this.txbRoomCodeOld);
             this.panel6.Location = new System.Drawing.Point(405, 196);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(391, 42);
@@ -264,7 +257,7 @@
             // 
             this.cbxRoomStatusNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxRoomStatusNew.FormattingEnabled = true;
-            this.cbxRoomStatusNew.Location = new System.Drawing.Point(177, 3);
+            this.cbxRoomStatusNew.Location = new System.Drawing.Point(177, 4);
             this.cbxRoomStatusNew.Name = "cbxRoomStatusNew";
             this.cbxRoomStatusNew.Size = new System.Drawing.Size(153, 28);
             this.cbxRoomStatusNew.TabIndex = 1;
@@ -280,15 +273,33 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Tình trạng phòng mới : ";
             // 
+            // txbRoomCodeOld
+            // 
+            this.txbRoomCodeOld.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbRoomCodeOld.Location = new System.Drawing.Point(188, 6);
+            this.txbRoomCodeOld.Name = "txbRoomCodeOld";
+            this.txbRoomCodeOld.Size = new System.Drawing.Size(10, 26);
+            this.txbRoomCodeOld.TabIndex = 0;
+            this.txbRoomCodeOld.TextChanged += new System.EventHandler(this.txbRoomCodeOld_TextChanged);
+            // 
+            // cbxRoomCode
+            // 
+            this.cbxRoomCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxRoomCode.FormattingEnabled = true;
+            this.cbxRoomCode.Location = new System.Drawing.Point(178, 72);
+            this.cbxRoomCode.Name = "cbxRoomCode";
+            this.cbxRoomCode.Size = new System.Drawing.Size(172, 28);
+            this.cbxRoomCode.TabIndex = 8;
+            // 
             // fEditRoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(797, 342);
+            this.Controls.Add(this.cbxRoomCode);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.simpleButton1);
             this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.txbRoomCodeOld);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel2);
@@ -296,7 +307,8 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel7);
             this.Name = "fEditRoom";
-            this.Text = "fEditRoom";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Sửa phòng";
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -320,7 +332,6 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox txbRoomCodeOld;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.TextBox txbRoomNameNew;
@@ -336,5 +347,7 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.ComboBox cbxRoomStatusNew;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox cbxRoomCode;
+        private System.Windows.Forms.TextBox txbRoomCodeOld;
     }
 }

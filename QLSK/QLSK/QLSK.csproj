@@ -235,12 +235,6 @@
     <Compile Include="fUpdateRoomPrice.Designer.cs">
       <DependentUpon>fUpdateRoomPrice.cs</DependentUpon>
     </Compile>
-    <Compile Include="fViewRoom.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fViewRoom.Designer.cs">
-      <DependentUpon>fViewRoom.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QUAN_LY_KHACH_SANDataSet.Designer.cs">
@@ -304,9 +298,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fUpdateRoomPrice.resx">
       <DependentUpon>fUpdateRoomPrice.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fViewRoom.resx">
-      <DependentUpon>fViewRoom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

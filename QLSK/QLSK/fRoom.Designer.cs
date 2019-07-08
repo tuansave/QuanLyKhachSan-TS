@@ -242,6 +242,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dtgvRoom);
             this.Name = "fRoom";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phòng";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvRoom)).EndInit();

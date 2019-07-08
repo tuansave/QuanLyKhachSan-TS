@@ -250,7 +250,7 @@
             this.btnAdd.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
             this.btnAdd.ImageOptions.Image = global::QLSK.Properties.Resources.add;
             this.btnAdd.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.btnAdd.Location = new System.Drawing.Point(335, 284);
+            this.btnAdd.Location = new System.Drawing.Point(185, 281);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(130, 76);
             this.btnAdd.TabIndex = 5;
@@ -282,13 +282,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 369);
+            this.ClientSize = new System.Drawing.Size(777, 361);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "fAddRoom";
-            this.Text = "fAddRoom";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Thêm phòng";
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel6.ResumeLayout(false);

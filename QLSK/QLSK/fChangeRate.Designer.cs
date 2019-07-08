@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.txtBox2 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnBack = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.dtgvRate = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnBack = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.panel6 = new System.Windows.Forms.Panel();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -61,24 +61,13 @@
             this.panel2.Size = new System.Drawing.Size(286, 106);
             this.panel2.TabIndex = 0;
             // 
-            // label1
+            // txtBox2
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label1.Location = new System.Drawing.Point(15, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Hệ Số Phụ Thu";
-            // 
-            // txtBox1
-            // 
-            this.txtBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtBox1.Location = new System.Drawing.Point(151, 70);
-            this.txtBox1.Name = "txtBox1";
-            this.txtBox1.Size = new System.Drawing.Size(120, 26);
-            this.txtBox1.TabIndex = 1;
+            this.txtBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtBox2.Location = new System.Drawing.Point(151, 12);
+            this.txtBox2.Name = "txtBox2";
+            this.txtBox2.Size = new System.Drawing.Size(120, 26);
+            this.txtBox2.TabIndex = 0;
             // 
             // label2
             // 
@@ -91,13 +80,24 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Tỷ Lệ Phụ Thu";
             // 
-            // txtBox2
+            // txtBox1
             // 
-            this.txtBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtBox2.Location = new System.Drawing.Point(151, 12);
-            this.txtBox2.Name = "txtBox2";
-            this.txtBox2.Size = new System.Drawing.Size(120, 26);
-            this.txtBox2.TabIndex = 0;
+            this.txtBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtBox1.Location = new System.Drawing.Point(151, 70);
+            this.txtBox1.Name = "txtBox1";
+            this.txtBox1.Size = new System.Drawing.Size(120, 26);
+            this.txtBox1.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label1.Location = new System.Drawing.Point(15, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(117, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Hệ Số Phụ Thu";
             // 
             // panel3
             // 
@@ -107,34 +107,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(575, 104);
             this.panel3.TabIndex = 1;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.dtgvRate);
-            this.panel4.Location = new System.Drawing.Point(288, 12);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(305, 104);
-            this.panel4.TabIndex = 3;
-            // 
-            // dtgvRate
-            // 
-            this.dtgvRate.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgvRate.BackgroundColor = System.Drawing.Color.White;
-            this.dtgvRate.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvRate.Location = new System.Drawing.Point(15, 6);
-            this.dtgvRate.Name = "dtgvRate";
-            this.dtgvRate.Size = new System.Drawing.Size(287, 90);
-            this.dtgvRate.TabIndex = 0;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(1, 52);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(603, 228);
-            this.panel1.TabIndex = 10;
             // 
             // btnBack
             // 
@@ -178,6 +150,34 @@
             this.simpleButton1.Text = "Cập nhật";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.dtgvRate);
+            this.panel4.Location = new System.Drawing.Point(288, 12);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(305, 104);
+            this.panel4.TabIndex = 3;
+            // 
+            // dtgvRate
+            // 
+            this.dtgvRate.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvRate.BackgroundColor = System.Drawing.Color.White;
+            this.dtgvRate.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvRate.Location = new System.Drawing.Point(15, 6);
+            this.dtgvRate.Name = "dtgvRate";
+            this.dtgvRate.Size = new System.Drawing.Size(287, 90);
+            this.dtgvRate.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Location = new System.Drawing.Point(1, 52);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(603, 228);
+            this.panel1.TabIndex = 10;
+            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(180)))), ((int)(((byte)(75)))));
@@ -216,7 +216,8 @@
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel1);
             this.Name = "fChangeRate";
-            this.Text = "fChangeRate";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Thay đổi tỷ lệ";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);

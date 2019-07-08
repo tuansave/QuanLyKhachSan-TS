@@ -97,6 +97,7 @@ namespace QuanLyKhachSan.DAO
 
         public string setComboBoxformality() { return "select MaHinhThucThue,TenHinhThucThue from dbo.HINHTHUCTHUE"; }
         public string setComboBoxRoomName() { return "select TenPhong from dbo.PHONG"; }
+        public string setComboBoxRoomCode() { return "select MaPhong from dbo.PHONG"; }
         public int ReturnRoomCode(string roomName)
         {
             string query = "select MaPhong from Phong where TenPhong = N'" + roomName + "'";
@@ -109,7 +110,8 @@ namespace QuanLyKhachSan.DAO
         {
             string createTenancyCardQuery = "EXEC dbo.CreateTenancyCard @RoomCode , @FormalityCode , @BeginDay , @GuestNum ";
             int rs = DataProvide.Instance.ExecuteNonQuery(createTenancyCardQuery, new object[] { getCodeRoom, Formality,getBeginDay,guestNum });
-            return rs;
+           return rs;
+           
         }
 
         public int ReturnTenancyCardCode(int getCodeRoom)

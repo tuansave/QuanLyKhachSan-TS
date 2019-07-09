@@ -29,15 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label3 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.dateTimeChartRangeControlClient1 = new DevExpress.XtraEditors.DateTimeChartRangeControlClient();
             this.dtp = new MetroFramework.Controls.MetroDateTime();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnCreat = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.dtgvReport = new System.Windows.Forms.DataGridView();
             this.cHITIET_BAOCAO_DOANHTHUTableAdapter = new QLSK.QUAN_LY_KHACH_SANDataSetTableAdapters.CHITIET_BAOCAO_DOANHTHUTableAdapter();
@@ -45,6 +44,7 @@
             this.qUAN_LY_KHACH_SANDataSet = new QLSK.QUAN_LY_KHACH_SANDataSet();
             this.rp1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.btnBack = new DevExpress.XtraEditors.SimpleButton();
+            this.btnPrintPay = new DevExpress.XtraEditors.SimpleButton();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeChartRangeControlClient1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -88,37 +88,16 @@
             this.dtp.Size = new System.Drawing.Size(216, 29);
             this.dtp.TabIndex = 14;
             this.dtp.ValueChanged += new System.EventHandler(this.dtp_ValueChanged);
+            this.dtp.Validating += new System.ComponentModel.CancelEventHandler(this.dtp_Validating);
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btnCreat);
             this.panel1.Controls.Add(this.labelControl1);
             this.panel1.Controls.Add(this.dtp);
             this.panel1.Location = new System.Drawing.Point(2, 70);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1001, 60);
             this.panel1.TabIndex = 16;
-            // 
-            // btnCreat
-            // 
-            this.btnCreat.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.btnCreat.Appearance.BackColor2 = System.Drawing.Color.White;
-            this.btnCreat.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreat.Appearance.ForeColor = System.Drawing.Color.Tomato;
-            this.btnCreat.Appearance.Options.UseBackColor = true;
-            this.btnCreat.Appearance.Options.UseFont = true;
-            this.btnCreat.Appearance.Options.UseForeColor = true;
-            this.btnCreat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnCreat.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
-            this.btnCreat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCreat.ImageOptions.Image = global::QLSK.Properties.Resources.pay;
-            this.btnCreat.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.btnCreat.Location = new System.Drawing.Point(387, 10);
-            this.btnCreat.Name = "btnCreat";
-            this.btnCreat.Size = new System.Drawing.Size(149, 33);
-            this.btnCreat.TabIndex = 18;
-            this.btnCreat.Text = "Thanh Toán";
-            this.btnCreat.Click += new System.EventHandler(this.btnCreat_Click);
             // 
             // labelControl1
             // 
@@ -131,7 +110,6 @@
             this.labelControl1.Size = new System.Drawing.Size(120, 25);
             this.labelControl1.TabIndex = 16;
             this.labelControl1.Text = "Chọn tháng";
-            this.labelControl1.Click += new System.EventHandler(this.labelControl1_Click);
             // 
             // dtgvReport
             // 
@@ -142,7 +120,6 @@
             this.dtgvReport.Name = "dtgvReport";
             this.dtgvReport.Size = new System.Drawing.Size(533, 208);
             this.dtgvReport.TabIndex = 17;
-            this.dtgvReport.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvReport_CellContentClick);
             // 
             // cHITIET_BAOCAO_DOANHTHUTableAdapter
             // 
@@ -160,22 +137,22 @@
             // 
             // rp1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.rp1.ChartAreas.Add(chartArea1);
+            chartArea2.Name = "ChartArea1";
+            this.rp1.ChartAreas.Add(chartArea2);
             this.rp1.DataSource = this.cHITIETBAOCAODOANHTHUBindingSource;
-            legend1.Name = "Legend1";
-            this.rp1.Legends.Add(legend1);
+            legend2.Name = "Legend1";
+            this.rp1.Legends.Add(legend2);
             this.rp1.Location = new System.Drawing.Point(583, 136);
             this.rp1.Name = "rp1";
             this.rp1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            series1.XValueMember = "DoanhThu";
-            series1.YValueMembers = "TyLe";
-            this.rp1.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            series2.XValueMember = "DoanhThu";
+            series2.YValueMembers = "TyLe";
+            this.rp1.Series.Add(series2);
             this.rp1.Size = new System.Drawing.Size(360, 208);
             this.rp1.TabIndex = 18;
             this.rp1.Text = "chart1";
@@ -201,11 +178,32 @@
             this.btnBack.Text = "Trở về";
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // btnPrintPay
+            // 
+            this.btnPrintPay.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.btnPrintPay.Appearance.BackColor2 = System.Drawing.Color.White;
+            this.btnPrintPay.Appearance.BorderColor = System.Drawing.Color.Transparent;
+            this.btnPrintPay.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrintPay.Appearance.ForeColor = System.Drawing.Color.Blue;
+            this.btnPrintPay.Appearance.Options.UseBackColor = true;
+            this.btnPrintPay.Appearance.Options.UseBorderColor = true;
+            this.btnPrintPay.Appearance.Options.UseFont = true;
+            this.btnPrintPay.Appearance.Options.UseForeColor = true;
+            this.btnPrintPay.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
+            this.btnPrintPay.ImageOptions.Image = global::QLSK.Properties.Resources.export_pdf;
+            this.btnPrintPay.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.btnPrintPay.Location = new System.Drawing.Point(5, 350);
+            this.btnPrintPay.Name = "btnPrintPay";
+            this.btnPrintPay.Size = new System.Drawing.Size(153, 76);
+            this.btnPrintPay.TabIndex = 34;
+            this.btnPrintPay.Text = "Xuất báo cáo";
+            // 
             // fReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(970, 425);
+            this.Controls.Add(this.btnPrintPay);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.rp1);
             this.Controls.Add(this.dtgvReport);
@@ -236,12 +234,12 @@
         private MetroFramework.Controls.MetroDateTime dtp;
         private System.Windows.Forms.Panel panel1;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.SimpleButton btnCreat;
         private System.Windows.Forms.DataGridView dtgvReport;
         private QUAN_LY_KHACH_SANDataSetTableAdapters.CHITIET_BAOCAO_DOANHTHUTableAdapter cHITIET_BAOCAO_DOANHTHUTableAdapter;
         private QUAN_LY_KHACH_SANDataSet qUAN_LY_KHACH_SANDataSet;
         private System.Windows.Forms.BindingSource cHITIETBAOCAODOANHTHUBindingSource;
         private System.Windows.Forms.DataVisualization.Charting.Chart rp1;
         private DevExpress.XtraEditors.SimpleButton btnBack;
+        private DevExpress.XtraEditors.SimpleButton btnPrintPay;
     }
 }

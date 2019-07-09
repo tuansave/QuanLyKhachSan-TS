@@ -19,38 +19,33 @@ namespace QLSK
 
         private void dateTimeChartRangeControlClient1_CustomizeSeries(object sender, DevExpress.XtraEditors.ClientDataSourceProviderCustomizeSeriesEventArgs e)
         {
+            
 
         }
 
-        private void labelControl2_Click(object sender, EventArgs e)
-        {
-
-        }
+      
 
 
-        private void labelControl1_Click(object sender, EventArgs e)
-        {
-
-        }
+     
 
         private void btnCreat_Click(object sender, EventArgs e)
         {
-            int _month = dtp.Value.Month, _year = dtp.Value.Year;
+            //int _month = dtp.Value.Month, _year = dtp.Value.Year;
 
 
-            try
-            {
+            //try
+            //{
              
-                ReportDAO.Instance.CreateReport(_month, _year);
-                MessageBox.Show("Tạo báo cáo thành công!");
-            }
-            catch
-            {
-                MessageBox.Show("Tạo báo cáo thành công!");
-            }
-            dtgvReport.DataSource = ReportDAO.Instance.ViewReport(_month, _year);
-            rp1.Hide();
-            rp1.Show();
+            //    ReportDAO.Instance.CreateReport(_month, _year);
+            //    MessageBox.Show("Tạo báo cáo thành công!");
+            //}
+            //catch
+            //{
+            //    MessageBox.Show("Tạo báo cáo thành công!");
+            //}
+            //dtgvReport.DataSource = ReportDAO.Instance.ViewReport(_month, _year);
+            //rp1.Hide();
+            //rp1.Show();
         }
 
         private void fReport_Load(object sender, EventArgs e)
@@ -67,7 +62,13 @@ namespace QLSK
 
         private void dtp_ValueChanged(object sender, EventArgs e)
         {
-                
+            int _month = dtp.Value.Month, _year = dtp.Value.Year;
+
+
+          
+            dtgvReport.DataSource = ReportDAO.Instance.ViewReport(_month, _year);
+            rp1.Hide();
+            rp1.Show();
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -75,7 +76,7 @@ namespace QLSK
             this.Close();
         }
 
-        private void dtgvReport_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dtp_Validating(object sender, CancelEventArgs e)
         {
 
         }

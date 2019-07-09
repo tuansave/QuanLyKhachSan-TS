@@ -153,7 +153,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(107, 14);
+            this.label2.Location = new System.Drawing.Point(17, 14);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 20);
             this.label2.TabIndex = 1;
@@ -162,9 +162,9 @@
             // txbAddress
             // 
             this.txbAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbAddress.Location = new System.Drawing.Point(189, 8);
+            this.txbAddress.Location = new System.Drawing.Point(88, 8);
             this.txbAddress.Name = "txbAddress";
-            this.txbAddress.Size = new System.Drawing.Size(175, 26);
+            this.txbAddress.Size = new System.Drawing.Size(276, 26);
             this.txbAddress.TabIndex = 0;
             // 
             // panel4
@@ -211,9 +211,9 @@
             this.simpleButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
             this.simpleButton2.ImageOptions.Image = global::QLSK.Properties.Resources.check___Copy;
             this.simpleButton2.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.simpleButton2.Location = new System.Drawing.Point(198, 265);
+            this.simpleButton2.Location = new System.Drawing.Point(198, 262);
             this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(194, 87);
+            this.simpleButton2.Size = new System.Drawing.Size(175, 87);
             this.simpleButton2.TabIndex = 11;
             this.simpleButton2.Text = "Thêm Phiếu Thuê";
             this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);

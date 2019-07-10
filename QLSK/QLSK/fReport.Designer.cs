@@ -29,9 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fReport));
             this.label3 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.dateTimeChartRangeControlClient1 = new DevExpress.XtraEditors.DateTimeChartRangeControlClient();
@@ -42,23 +40,23 @@
             this.cHITIET_BAOCAO_DOANHTHUTableAdapter = new QLSK.QUAN_LY_KHACH_SANDataSetTableAdapters.CHITIET_BAOCAO_DOANHTHUTableAdapter();
             this.cHITIETBAOCAODOANHTHUBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.qUAN_LY_KHACH_SANDataSet = new QLSK.QUAN_LY_KHACH_SANDataSet();
-            this.rp1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.btnBack = new DevExpress.XtraEditors.SimpleButton();
             this.btnPrintPay = new DevExpress.XtraEditors.SimpleButton();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeChartRangeControlClient1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvReport)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cHITIETBAOCAODOANHTHUBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qUAN_LY_KHACH_SANDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rp1)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(371, 9);
+            this.label3.Location = new System.Drawing.Point(193, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(273, 42);
             this.label3.TabIndex = 9;
@@ -118,7 +116,7 @@
             this.dtgvReport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvReport.Location = new System.Drawing.Point(5, 136);
             this.dtgvReport.Name = "dtgvReport";
-            this.dtgvReport.Size = new System.Drawing.Size(533, 208);
+            this.dtgvReport.Size = new System.Drawing.Size(641, 208);
             this.dtgvReport.TabIndex = 17;
             // 
             // cHITIET_BAOCAO_DOANHTHUTableAdapter
@@ -135,28 +133,6 @@
             this.qUAN_LY_KHACH_SANDataSet.DataSetName = "QUAN_LY_KHACH_SANDataSet";
             this.qUAN_LY_KHACH_SANDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // rp1
-            // 
-            chartArea2.Name = "ChartArea1";
-            this.rp1.ChartAreas.Add(chartArea2);
-            this.rp1.DataSource = this.cHITIETBAOCAODOANHTHUBindingSource;
-            legend2.Name = "Legend1";
-            this.rp1.Legends.Add(legend2);
-            this.rp1.Location = new System.Drawing.Point(583, 136);
-            this.rp1.Name = "rp1";
-            this.rp1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            series2.XValueMember = "DoanhThu";
-            series2.YValueMembers = "TyLe";
-            this.rp1.Series.Add(series2);
-            this.rp1.Size = new System.Drawing.Size(360, 208);
-            this.rp1.TabIndex = 18;
-            this.rp1.Text = "chart1";
-            // 
             // btnBack
             // 
             this.btnBack.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -171,7 +147,7 @@
             this.btnBack.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
             this.btnBack.ImageOptions.Image = global::QLSK.Properties.Resources.back;
             this.btnBack.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.btnBack.Location = new System.Drawing.Point(826, 350);
+            this.btnBack.Location = new System.Drawing.Point(514, 350);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(132, 76);
             this.btnBack.TabIndex = 19;
@@ -197,15 +173,30 @@
             this.btnPrintPay.Size = new System.Drawing.Size(153, 76);
             this.btnPrintPay.TabIndex = 34;
             this.btnPrintPay.Text = "Xuất báo cáo";
+            this.btnPrintPay.Click += new System.EventHandler(this.btnPrintPay_Click);
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Document = this.printDocument1;
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
             // 
             // fReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(970, 425);
+            this.ClientSize = new System.Drawing.Size(650, 425);
             this.Controls.Add(this.btnPrintPay);
             this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.rp1);
             this.Controls.Add(this.dtgvReport);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel6);
@@ -221,7 +212,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtgvReport)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cHITIETBAOCAODOANHTHUBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qUAN_LY_KHACH_SANDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rp1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -238,8 +228,9 @@
         private QUAN_LY_KHACH_SANDataSetTableAdapters.CHITIET_BAOCAO_DOANHTHUTableAdapter cHITIET_BAOCAO_DOANHTHUTableAdapter;
         private QUAN_LY_KHACH_SANDataSet qUAN_LY_KHACH_SANDataSet;
         private System.Windows.Forms.BindingSource cHITIETBAOCAODOANHTHUBindingSource;
-        private System.Windows.Forms.DataVisualization.Charting.Chart rp1;
         private DevExpress.XtraEditors.SimpleButton btnBack;
         private DevExpress.XtraEditors.SimpleButton btnPrintPay;
+        private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
     }
 }

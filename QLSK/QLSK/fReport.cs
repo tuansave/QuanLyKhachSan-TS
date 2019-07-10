@@ -67,8 +67,8 @@ namespace QLSK
 
           
             dtgvReport.DataSource = ReportDAO.Instance.ViewReport(_month, _year);
-            rp1.Hide();
-            rp1.Show();
+            //rp1.Hide();
+          //  rp1.Show();
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -79,6 +79,26 @@ namespace QLSK
         private void dtp_Validating(object sender, CancelEventArgs e)
         {
 
+        }
+
+        private void rp1_Click(object sender, EventArgs e)
+        {
+
+        }
+        Bitmap bmp;
+        private void btnPrintPay_Click(object sender, EventArgs e)
+        {
+            int height = dtgvReport.Height;
+            dtgvReport.Height = dtgvReport.RowCount * dtgvReport.RowTemplate.Height * 2;
+            bmp = new Bitmap(dtgvReport.Width, dtgvReport.Height);
+            dtgvReport.DrawToBitmap(bmp, new Rectangle(0, 0, dtgvReport.Width, dtgvReport.Height));
+            dtgvReport.Height = height;
+            printPreviewDialog1.ShowDialog();
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawImage(bmp,0,0);
         }
     }
 }

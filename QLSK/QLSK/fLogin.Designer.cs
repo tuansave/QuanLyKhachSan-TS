@@ -50,8 +50,7 @@
             this.tbUsername.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.tbUsername.CustomButton.UseSelectable = true;
             this.tbUsername.CustomButton.Visible = false;
-            this.tbUsername.Lines = new string[] {
-        "admin"};
+            this.tbUsername.Lines = new string[0];
             this.tbUsername.Location = new System.Drawing.Point(191, 75);
             this.tbUsername.MaxLength = 32767;
             this.tbUsername.Name = "tbUsername";
@@ -64,7 +63,6 @@
             this.tbUsername.ShortcutsEnabled = true;
             this.tbUsername.Size = new System.Drawing.Size(260, 23);
             this.tbUsername.TabIndex = 1;
-            this.tbUsername.Text = "admin";
             this.tbUsername.UseSelectable = true;
             this.tbUsername.WaterMark = "Tên đăng nhập";
             this.tbUsername.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -84,8 +82,7 @@
             this.tbPassword.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.tbPassword.CustomButton.UseSelectable = true;
             this.tbPassword.CustomButton.Visible = false;
-            this.tbPassword.Lines = new string[] {
-        "admin"};
+            this.tbPassword.Lines = new string[0];
             this.tbPassword.Location = new System.Drawing.Point(191, 114);
             this.tbPassword.MaxLength = 32767;
             this.tbPassword.Name = "tbPassword";
@@ -98,7 +95,6 @@
             this.tbPassword.ShortcutsEnabled = true;
             this.tbPassword.Size = new System.Drawing.Size(260, 23);
             this.tbPassword.TabIndex = 2;
-            this.tbPassword.Text = "admin";
             this.tbPassword.UseSelectable = true;
             this.tbPassword.WaterMark = "Mật khẩu";
             this.tbPassword.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
